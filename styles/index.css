@@ -1,0 +1,182 @@
+body{
+    margin:0px;
+    padding:0px;
+    text-align: center;
+}
+.slogan{
+    color:grey;
+    font-size: 30px;
+    font-family: 'open Sans';
+    font-weight: lighter;
+    margin:20px auto -30px auto;
+}
+div h1{
+    letter-spacing: 5px;
+    font-size: 60px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bolder;
+    font-style: italic;
+}
+#banner{
+    position:relative;
+    width:100%;
+    height:450px;
+    border-radius: 25px;
+}
+.slides{
+    position: absolute;
+    width:100%;
+    height:100%;
+    display:none;
+    transform: translateX(100%,);
+    /* animation:scrolling 10s linear Infinite; */
+}
+@keyframes scrolling {
+    0%{
+        transform: translateX(100%);
+    }
+    100%{
+        transfor:transalteX(200%)
+    }
+}
+
+.slides img{
+    width:100%;
+    border-radius: 25px;
+    height:100%;
+}
+.pre, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 37%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: grey;
+    font-weight: bolder;
+    font-size: 22px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+.pre{
+    left:0;
+}
+.next{
+    right:0;
+}
+.dot,
+.dot2
+{
+    cursor: pointer;
+    height: 10px;
+    width: 10px;
+    margin: 0 2px;
+    background-color: white;
+    border-radius: 50%;
+    border: 2px solid darkslategray;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+    margin-top: 5px;
+  }
+  
+  .active, .dot:hover {
+    background-color: darkslategray;
+  }
+#banner2{
+    position:relative;
+    margin:auto;
+    width:80%;
+    height:300px;
+    border-radius: 25px;
+}
+#banner2 img{
+    width:100%;
+    border-radius: 25px;
+    height:100%;
+}
+
+
+#content{
+    width:75%;
+    margin:auto;
+    display:grid;
+    grid-template-columns: repeat(4,1fr);
+    gap:40px;
+}
+.prod{
+    position:relative;
+    border:1px solid gray;
+    border-radius: 5px;
+}
+.discount {
+    position: absolute;
+    right: 0;
+    margin-top: 0px;
+    font-size: 16px;
+    padding: 2px 5px;
+    /* box-sizing: border-box; */
+    background-color: darkgrey;
+    color: white;
+}
+
+
+.prodImage {
+    margin-bottom: -30px;
+    width: 100%;
+    border-radius:5px;
+}
+
+.checked {
+    color: orange;
+}
+
+.prodName {
+    font-size: 16px;
+    font-weight: 800;
+    font-style: 'Roboto', sans-serif;
+    margin-top: -20px;
+    margin-bottom: -10px;
+    color:grey;
+}
+
+.prodType {
+    font-size: 16px;
+    color: #3c3c3c;
+}
+
+.ratingrev {
+    padding: 10px 30px 10px 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.price {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    gap:30px;
+}
+.strikeprice {
+    text-decoration: line-through;
+    font-size: 14px;
+    color: darkslategray;
+}
+.prodPrice {
+    color: #ff879c;
+    font-size: 14px;
+    font-weight: 700;
+    font-family: 'Roboto', sans-serif;
+}
+.head1{
+    font-size: 18px;
+}
+.head2{
+    font-size: 35px;
+    font-style: italic;
+    font-weight: 800;
+    font-family: 'Open Sans', sans-serif;
+    margin-top: -20px;
+}
