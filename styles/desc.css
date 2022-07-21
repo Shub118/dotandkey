@@ -79,4 +79,13 @@ li{
     background-color: #5c5c5c;
     color: white;
     border: none;
+    cursor: pointer;
+}
+#review>h3{
+    font-size: 30px;
+    font-weight: 500;
+}
+.indc{
+    font-size: 23px;
+    cursor: pointer;
 }
