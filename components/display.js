@@ -22,7 +22,7 @@ function display(data,container){
         rat.innerText = element.rating;
 
         let pers = document.createElement("p");
-        pers.style = "color:blue; margin-left:5px";
+        pers.style = "color:blue; margin-left:5px; margin-top:13px";
         pers.innerText = element.person;
         star.append(span1, rat, pers);
         ratRev.append(star);
