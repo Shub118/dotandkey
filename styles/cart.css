@@ -1,0 +1,10 @@
+h1{
+    margin-top: 5%;
+    text-align: center;
+}
+#qt{
+    width: 90%;
+    display: flex;
+    justify-content: flex-end;
+    gap: 20%;
+}
