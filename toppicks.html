@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="./styles/footer.css">
     <link rel="stylesheet" href="./styles/toppicks.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -13,7 +14,24 @@
     </div>
     <h1>TOP PICKS</h1>
     <div id="products"></div>
+    <div id="filter-div">
+        <select name="filter" id="filter">
+            <option value="filter">Filter</option>
+            <option value="serum">Serum</option>
+            <option value="mask">Mask</option>
+            <option value="cream">Cream</option>
+            <option value="moisturizer">Moisturizer</option>
+        </select>
+        <select name="Featured" id="sort">
+            <option value="featured">Featured</option>
+            <option value="alphabetically,a-z">Alphabetically,A-Z</option>
+            <option value="alphabetically,z-a">Alphabetically,Z-A</option>
+            <option value="price,low to high">price,low to high</option>
+            <option value="price,high to low">price,high to low</option>
+        </select>
+    </div>
+   <div id="toppicks-footer"></div>
     
 </body>
 </html>
-<script src="./scripts/toppick.js"></script>
+<script src="./scripts/toppick.js" type="module"></script>
