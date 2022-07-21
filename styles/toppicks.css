@@ -7,22 +7,36 @@
     box-sizing: border-box;
 }
 #products{
+    
     display:grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(4,1fr);
     grid-template-rows: auto;
-  
+   
 }
 #products>div{
-  border: solid red;
+  
    text-align: center;
    margin-bottom:30px;
+   width:70%;
+   margin:45px ;
 }
 #products>div>div{
  
   display:flex;
   justify-content: space-evenly;
 }
+#products>div>img{
+    width:100%;
+}
 h1{
     margin:30px 0px 30px 0px;
     text-align:center;
+}
+#products>div>button{
+    width:100%;
+    color:#FFFBEA;
+    background-color: #7B7B7B;
+    padding:10px;
+    margin-top:15px;
+    border:none;
 }
