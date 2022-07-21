@@ -1,10 +1,99 @@
+*{
+    font-family: Montserrat,sans-serif;
+    line-height: 1.4;
+}
 h1{
     margin-top: 5%;
     text-align: center;
+    letter-spacing: .2em;
+
+}
+h5{
+    width: 80%;
+    letter-spacing: normal;
+    margin-left: 10%;
+}
+input{
+    margin-left: 10%;
 }
 #qt{
-    width: 90%;
+    width: 85%;
     display: flex;
     justify-content: flex-end;
-    gap: 20%;
+    gap: 12%;
+}
+#cont{
+    width: 80%;
+    margin: auto;
+}
+#cont>div{
+    display: flex;
+    gap: 7%;
+    margin-top: 1%;
+}
+#cont>div>:nth-child(3){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: large;
+    height: fit-content;
+    /* margin-left: 10%; */
+   gap: 5%;
+    margin-right: 8%;
+}
+#cont>div>:nth-child(3)>button{
+    font-size: x-large;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    width: 30px;
+    border: 0.5px;
+    cursor: pointer;
+}
+#cont>div>div:nth-child(2){
+    width: 40%;
+}
+#cont>div>:nth-child(2)>button{
+    border: 0px;
+    font-size: medium;
+    cursor: pointer;
+}
+#cont>img{
+    width: 80%;
+}
+#stotal{
+    text-align: right;
+    width: 80%;
+    margin: auto;
+
+}
+#stotal>h4{
+    display: inline-block;
+   margin: 1%;
+}
+#stotal>p{
+    width: 25%;
+    text-align: right;
+    margin-left: 75%;
+}
+#ckot{
+    font-size: large;
+    position: sticky;
+    bottom: 0px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+#lh{
+    margin-left: 45%;
+    position: sticky;
+    top: 0px;
+    font-size: large;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+div+hr{
+    width: 80%;
 }

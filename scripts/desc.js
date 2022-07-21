@@ -1,3 +1,5 @@
+import footer from "./footer.js"
+document.querySelector('#footer').innerHTML = footer()
 // JSON.parse(localStorage.getItem("cart"))
 let cartData = [
     {image:"https://cdn.shopify.com/s/files/1/0361/8553/8692/products/vit_c_1_ebdbf467-a1d3-454f-a18f-e9e753de65c8_720x.png?v=1657950494",
@@ -90,6 +92,19 @@ function inc (){
     getDoc('#cart').addEventListener('click',cart)
 
     // ////////////////////////////////customer review///
-    let p = crt('h3')
-    p.innerText = `${rating} ☆`
+    let p = crt('p')
+    p.innerText = `Rating:- ${rating}/5`
     getDoc('#review').append(p)
+    for(let i=0; i<rating; i++){
+        let star = crt('span')
+        star.innerText = '★'
+        getDoc('#review').append(star)
+    }
+    for(let i=rating; i<5; i++){
+        let star = crt('span')
+        star.innerText = '☆'
+        getDoc('#review').append(star)
+    }
+  
+
+  export {getDoc,crt} 
