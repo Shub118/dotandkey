@@ -94,7 +94,7 @@ let newArrival=[
     discount:25,
     rating:"4.7/5",
     person:"(46)",
-    title:"20% Vitamin C Serum with Blood Orange | For Skin Glow |",
+    title:"20% Vitamin C Serum with Blood Orange | For Skin Glow",
     cancelPrice:665,
     price:499.00,
   },
@@ -134,8 +134,9 @@ document.querySelector("body").onload=()=>{
   run();
 };
 
+//========Best Seller Products Data
 
-// bodycare data
+// skincare
 let skinCare=[
   {
     image:"./images/skicare/pic1.webp",
@@ -175,14 +176,6 @@ let skinCare=[
   },
   ];
 
-let bestSeller=document.getElementById("bestSellerContent");
-display(skinCare,bestSeller);
-document.getElementById("skin").onclick=()=>{
-  let bestSeller=document.getElementById("bestSellerContent");
-  bestSeller.innerHTML="";
-  display(skinCare,bestSeller);
-}
-
 let bodyCare=[
   {
     image:"./images/bodycare/pic1.webp",
@@ -213,21 +206,13 @@ let bodyCare=[
   },
   {
     image:"./images/bodycare/pic4.webp",
-    title:"Yoghurt GLOW Body Moisturizer WITH Avalon Lemon VITAMIN C",
+    title:"Yoghurt Glow Body Moist- urizer WITH Avalon Lemon",
     discount:31,
     rating:"4.6/5",
     person:"(220)",
     cancelPrice:665,
     price:499,
-  },
-];
-
-  document.getElementById("body").onclick=()=>{
-    let bestSeller=document.getElementById("bestSellerContent");
-    bestSeller.innerHTML="";
-    display(bodyCare,bestSeller);
-  }
-
+  }];
 
   let hairCare=[
     {
@@ -267,12 +252,6 @@ let bodyCare=[
       price:516,
     },
   ];
-  document.getElementById("hair").onclick=()=>{
-    let bestSeller=document.getElementById("bestSellerContent");
-    bestSeller.innerHTML="";
-    display(hairCare,bestSeller);
-  }
-
 
   let nutrition=[
     {
@@ -312,9 +291,244 @@ let bodyCare=[
       price:645,
     },
   ];
-  document.getElementById("nutr").onclick=()=>{
+
+  let skincare=document.getElementById("skin")
+  let bodycare=document.getElementById("body")
+  let haircare=document.getElementById("hair")
+  let nutri=document.getElementById("nutr");
+
+  //====SKIN CARE====
+  let bestSeller=document.getElementById("bestSellerContent");
+  display(skinCare,bestSeller);
+  skincare.style="color:red";
+
+  skincare.onclick=()=>{
+    let bestSeller=document.getElementById("bestSellerContent");
+    bestSeller.innerHTML="";
+    display(skinCare,bestSeller);
+
+    skincare.style="color:red";
+    bodycare.style="color:gray";
+    haircare.style="color:gray";
+    nutri.style="color:gray";
+  }
+
+  //====BODY CARE====
+  bodycare.onclick=()=>{
+    let bestSeller=document.getElementById("bestSellerContent");
+    bestSeller.innerHTML="";
+    display(bodyCare,bestSeller);
+
+    skincare.style="color:gray";
+    bodycare.style="color:red";
+    haircare.style="color:gray";
+    nutri.style="color:gray";
+  }
+//====HAIRCARE====
+  haircare.onclick=()=>{
+    let bestSeller=document.getElementById("bestSellerContent");
+    bestSeller.innerHTML="";
+    display(hairCare,bestSeller);
+
+    skincare.style="color:gray";
+    bodycare.style="color:gray";
+    haircare.style="color:red";
+    nutri.style="color:gray";
+  }
+
+//====NUTRITION====
+  nutri.onclick=()=>{
     let bestSeller=document.getElementById("bestSellerContent");
     bestSeller.innerHTML="";
     display(nutrition,bestSeller);
+
+    skincare.style="color:gray";
+    bodycare.style="color:gray";
+    haircare.style="color:gray";
+    nutri.style="color:red";
   }
 
+
+//==========Top Categories all products data=============
+
+  let faceCream=[
+    {
+      image:"./images/facecream/pic1.webp",
+      title:"Retinol & Ceramide Age Defense Night Cream For Face",
+      discount:"25",
+      rating:"4.7/5",
+      person:"(222)",
+      cancelPrice:945,
+      price:709,
+    },
+    {
+      image:"./images/facecream/pic2.webp",
+      title:"72 HR Hydrating Probiotic Gel Moisturizer For Face",
+      discount:"15",
+      rating:"4.7/5",
+      person:"(248)",
+      cancelPrice:745,
+      price:633,
+    },
+    {
+      image:"./images/facecream/pic3.webp",
+      title:"Vitamin C Moisturizer With Kakadu Plum & Vitamin E",
+      discount:"14",
+      rating:"4.8/5",
+      person:"(245)",
+      cancelPrice:700,
+      price:599,
+    },
+    {
+      image:"./images/facecream/pic4.webp",
+      title:"CICA Niacinamide Night Gel With Green Tea-Tree oil",
+      discount:"5",
+      rating:"4.8/5",
+      person:"(137)",
+      cancelPrice:595,
+      price:565,
+    }]
+
+  let faceSerum=[
+    {
+      image:"./images/faceserum/pic1.webp",
+      title:"10% Niacinamide Face Serum With Zinc & Antioxidants",
+      discount:"25",
+      rating:"4.6/5",
+      person:"(220)",
+      cancelPrice:665,
+      price:499,
+    },
+    {
+      image:"./images/faceserum/pic2.webp",
+      title:"HYALURONIC + CERAMIDE HYDRATING FACE SERUM",
+      discount:"25",
+      rating:"4.7/5",
+      person:"(296)",
+      cancelPrice:665,
+      price:499,
+    },
+    {
+      image:"./images/faceserum/pic3.webp",
+      title:"Vitamin C++ Glow Face Serum With Hyaluronic & Kakadu",
+      discount:"25",
+      rating:"4.7/5",
+      person:"(348)",
+      cancelPrice:795,
+      price:599,
+    }]
+
+  let faceWash=[
+    {
+      image:"./images/facewash/pic1.webp",
+      title:"Watermelon Super Glow Vitamin C Face Wash Gel",
+      discount:"25",
+      rating:"4.9/5",
+      person:"(82)",
+      cancelPrice:395,
+      price:296,
+    },
+    {
+      image:"./images/facewash/pic2.webp",
+      title:"Cica & Green Tea Face Wash With Salicylic| Treats Acne",
+      discount:"10",
+      rating:"4.9/5",
+      person:"(53)",
+      cancelPrice:395,
+      price:356,
+    },
+    {
+      image:"./images/facewash/pic3.webp",
+      title:"DEEP PORE FACIAL FOAM CLEANSER",
+      discount:"10",
+      rating:"4.7/5",
+      person:"(81)",
+      cancelPrice:395,
+      price:356,
+    }]
+
+  let faceMask=[
+    {
+      image:"./images/facemask/pic1.webp",
+      title:"Salicylic & French Green Clay Face Mask With Match",
+      discount:"28",
+      rating:"4.8/5",
+      person:"(235)",
+      cancelPrice:695,
+      price:499,
+    },
+    {
+      image:"./images/facemask/pic2.webp",
+      title:"DETAN + GLOW GREEN TEA CLAY MASK",
+      discount:"28",
+      rating:"4.7/5",
+      person:"(143)",
+      cancelPrice:695,
+      price:499,
+    },
+    {
+      image:"./images/facemask/pic3.webp",
+      title:"Vitamin C Pink Clay Face Mask With Kakadu",
+      discount:"28",
+      rating:"4.9/5",
+      person:"(297)",
+      cancelPrice:695,
+      price:499,
+    }]
+
+    let facecream=document.getElementById("cream");
+    let faceserum=document.getElementById("serum");
+    let facewash=document.getElementById("wash");
+    let facemask=document.getElementById("mask");
+
+// ------faceCream div of Top seller section
+    let topcontent=document.getElementById("topCatContent")
+    display(faceCream,topcontent);
+    facecream.style="color:red;"
+    
+    facecream.onclick=()=>{
+      let topcontent=document.getElementById("topCatContent")
+      topcontent.innerHTML=null;
+      display(faceCream,topcontent);
+
+      facecream.style="color:red;"
+      faceserum.style="color:gray;"
+      facemask.style="color:gray;"
+      facewash.style="color:gray;"
+    }
+
+// ------faceSerum div of Top seller section
+    faceserum.onclick=()=>{
+      let serumContent=document.getElementById("topCatContent");
+      serumContent.innerHTML=null;
+      display(faceSerum,serumContent);
+
+      facecream.style="color:gray;"
+      faceserum.style="color:red;"
+      facewash.style="color:gray;"
+      facemask.style="color:gray;"
+    }
+
+// -------faceWash div of Top seller section
+    facewash.onclick=()=>{
+      let washContent=document.getElementById("topCatContent");
+      washContent.innerHTML=null;
+      display(faceWash,washContent);
+
+      facecream.style="color:gray;"
+      faceserum.style="color:gray;"
+      facewash.style="color:red;"
+      facemask.style="color:gray;"
+    }
+
+// -------faceWash div of Top seller section
+  facemask.onclick=()=>{
+    let maskContent=document.getElementById("topCatContent");
+    maskContent.innerHTML=null;
+    display(faceMask,maskContent);
+
+    facecream.style="color:gray;"
+    faceserum.style="color:gray;"
+    facewash.style="color:gray;"
+    facemask.style="color:red;"
+  }
