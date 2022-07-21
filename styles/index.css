@@ -97,32 +97,41 @@ div h1{
 }
 
 
-#content{
+.content{
     width:75%;
     margin:auto;
     display:grid;
     grid-template-columns: repeat(4,1fr);
+    grid-template-rows: 370px;
+    overflow: hide;
     gap:40px;
+    margin-bottom: 50px;
 }
 .prod{
     position:relative;
     border:1px solid gray;
     border-radius: 5px;
 }
+.prod:hover{
+    box-shadow: 2px 2px 20px 5px gray;
+    cursor: pointer;
+}
 .discount {
     position: absolute;
     right: 0;
     margin-top: 0px;
-    font-size: 16px;
-    padding: 2px 5px;
+    font-size: 14px;
+    padding: 4px 9px;
     /* box-sizing: border-box; */
     background-color: darkgrey;
     color: white;
+    border-radius: 0px 5px 0px 5px;
 }
 
 
+
 .prodImage {
-    margin-bottom: -30px;
+    margin-bottom: -20px;
     width: 100%;
     border-radius:5px;
 }
@@ -146,6 +155,7 @@ div h1{
 }
 
 .ratingrev {
+    font-size: 14px;
     padding: 10px 30px 10px 35px;
     display: flex;
     justify-content: center;
@@ -179,4 +189,105 @@ div h1{
     font-weight: 800;
     font-family: 'Open Sans', sans-serif;
     margin-top: -20px;
+}
+.button{
+    width:100%;
+    padding:15px 5px;
+    border:none;
+    border-radius: 0px 0px 5px 5px;
+    font-weight: 900;
+    color:white;
+    background-color:#9c9999;
+}
+#bar{
+    width:fit-content;
+    margin:auto;
+    color:gray;
+    margin-top: -30px;
+    margin-bottom: 50px;
+    display:flex;
+    justify-content: space-evenly;
+    gap:20px;
+    font-weight: 600;
+}
+#bestSeller{
+    font-size: 18px;
+}
+#skin,
+#body,
+#hair,
+#nutr{
+    color:gray;
+}
+
+#skin:hover,
+#body:hover,
+#hair:hover,
+#nutr:hover,
+#cream:hover,
+#serum:hover,
+#wash:hover,
+#mask:hover{
+    color:green;
+    font-weight: bolder;
+    cursor: pointer;
+}
+#bar:visit{
+    color:pink;
+}
+#spotlight{
+    width:95%;
+    margin:auto;
+}
+#spotContent{
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+    gap:20px;
+    margin-bottom: 10px;
+}
+#spotlight img{
+    width:100%;
+    height:250px;
+}
+#buyItContent{
+    width:80%;
+    margin:auto;
+    display:grid;
+    grid-template-columns: repeat(5,1fr);
+    justify-content: center;
+    gap:20px;
+}
+#buyItContent .prodPrice{
+    color:gray;
+}
+.video{
+    width:100%;
+    border-radius: 5px 5px 0px 0px;
+    margin-bottom: -30px;
+}
+.logo{
+    width:50px;
+    height:50px;
+    margin-bottom: -15px;
+    border-radius: 5px;
+    border:1px solid dgray;
+}
+#rating{
+    width:70%;
+    margin:auto;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    margin:-10px auto -10px auto;
+}
+#rating .fa-star{
+    color:white;
+}
+#rating .checked,
+#rating .fa-star-half-full{
+    color:gray;
+}
+.title{
+    font-size: 14px;
 }

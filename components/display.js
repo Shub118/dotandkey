@@ -18,11 +18,11 @@ function display(data,container){
         star.setAttribute("class", "ratingrev")
 
         let rat = document.createElement("p");
-        rat.style = "margin-left:25px;"
+        rat.style = "margin-left:5px;"
         rat.innerText = element.rating;
 
         let pers = document.createElement("p");
-        pers.style = "color:blue; margin-left:15px";
+        pers.style = "color:blue; margin-left:5px";
         pers.innerText = element.person;
         star.append(span1, rat, pers);
         ratRev.append(star);
