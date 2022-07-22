@@ -1,0 +1,99 @@
+#signup_div {
+    width: 25%;
+    height: auto;
+    margin: auto;
+
+}
+
+h2 {
+    font-weight: 700;
+    font-family: Ubuntu, sans-serif;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+#fackbook_signup {
+    width: 100%;
+    height: 44px;
+    margin-bottom: 5px;
+    background-color: #4267B2;
+    border: none;
+}
+
+#for_facbook {
+    color: #fff;
+    text-decoration: none;
+}
+
+#for_google {
+    color: #fff;
+    text-decoration: none;
+}
+
+#for_creating_acunt {
+    color: #3c3c3c;
+    text-decoration: none;
+    cursor: pointer;
+    outline: none;
+    font-weight: lighter;
+    font-size: 17px;
+
+
+}
+
+#google_signup {
+    width: 100%;
+    height: 44px;
+    color: #fff;
+    background-color: #dd4b39;
+    border: none;
+    margin-bottom: 25px;
+}
+
+input {
+    width: 94%;
+
+    font-family: Gilroy Regular !important;
+    margin-bottom: 15px;
+    background-color: transparent;
+    color: inherit;
+    border: 1px solid #c3c3c3;
+    max-width: 100%;
+    padding: 8px 10px;
+    border-radius: 0;
+    -webkit-appearance: none;
+    letter-spacing: .05em;
+    line-height: 1.9;
+    font-size: 18px;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-size-adjust: 100%;
+    text-rendering: optimizeSpeed;
+
+
+}
+
+p {
+    display: block;
+    margin-bottom: 15px;
+    font-size: .77778em;
+    font-family: Montserrat, sans-serif;
+    font-weight: 700;
+    line-height: 1.4;
+
+    letter-spacing: .2em;
+
+}
+
+#create_butn {
+    width: 100%;
+    height: 45px;
+    color: white;
+    background-color: black;
+    background: #3c3c3c;
+    margin-top: 25px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: large;
+    margin-bottom: 30px;
+}

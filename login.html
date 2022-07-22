@@ -5,34 +5,31 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Create Account - Dot & Key</title>
-    <link rel="stylesheet" href="styles/signup.css">
+    <title>Accoutn-Dot & Key</title>
+    <link rel="stylesheet" href="styles/login.css">
     <style>
 
     </style>
 </head>
 
 <body>
-
     <div id="signup_div">
 
-        <h2>Create Account</h2>
-        <button id="fackbook_signup"> <a
+        <h2>Login</h2>
+        <button id="fackbook_signup"> <a id="for_facbook"
                 href="https://www.facebook.com/login.php?skip_api_login=1&api_key=1667514393504118&kid_directed_site=0&app_id=1667514393504118&signed_next=1&next=https%3A%2F%2Fwww.facebook.com%2Fdialog%2Foauth%3Fscope%3Demail%26state%3D13453-b582f6f7cafe402cbf990fdc4253f6f4%26redirect_uri%3Dhttps%253A%252F%252Foneclicksociallogin.devcloudsoftware.com%252Fuser%252Ffacebookloginnotifier%252F%26client_id%3D1667514393504118%26ret%3Dlogin%26fbapp_pres%3D0%26logger_id%3D359c37cb-c21d-46d6-a207-49a4db4d3333%26tp%3Dunspecified&cancel_url=https%3A%2F%2Foneclicksociallogin.devcloudsoftware.com%2Fuser%2Ffacebookloginnotifier%2F%3Ferror%3Daccess_denied%26error_code%3D200%26error_description%3DPermissions%2Berror%26error_reason%3Duser_denied%26state%3D13453-b582f6f7cafe402cbf990fdc4253f6f4%23_%3D_&display=page&locale=en_GB&pl_dbl=0">Facebook
                 Signup</a> </button>
-        <button id="google_signup"> <a
+        <button id="google_signup"> <a id="for_google"
                 href="https://accounts.google.com/o/oauth2/v2/auth/oauthchooseaccount?state=13453-b582f6f7cafe402cbf990fdc4253f6f4&redirect_uri=https%3A%2F%2Foneclicksociallogin.devcloudsoftware.com%2Fuser%2Fgoogleloginnotifier%2F&client_id=1003899641045-oa1oblo54ae2lh2qb2in254k1dgghs1g.apps.googleusercontent.com&response_type=code&include_granted_scopes=true&scope=https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email&prompt=select_account&access_type=online&flowName=GeneralOAuthFlow">Google
                 Signup</a> </button>
         <form action="" id="form">
-            <p>FIRST NAME</p>
-            <input type="text" id="first_name">
-            <p>LAST NAME</p>
-            <input type="text" id="last_name">
+
             <p>EMAIL</p>
-            <input type="email" id="email">
+            <input type="text" id="email">
             <p>PASSWORD</p>
             <input type="password" id="password">
-            <button id="create_butn">Create</button>
+            <button id="create_butn">SignIn</button>
+            <p><a href="signup.html" id="for_creating_acunt">Don't have an account? Sign up here.</a></p>
         </form>
 
     </div>
@@ -41,7 +38,4 @@
 
 </html>
 
-
-<script src="./scripts/signup.js">
-
-</script>
+<script src="./scripts/login.js"></script>
