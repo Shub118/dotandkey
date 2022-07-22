@@ -300,14 +300,14 @@ let bodyCare=[
   //====SKIN CARE====
   let bestSeller=document.getElementById("bestSellerContent");
   display(skinCare,bestSeller);
-  skincare.style="color:red";
+  skincare.style="color:#ff6781!important";
 
   skincare.onclick=()=>{
     let bestSeller=document.getElementById("bestSellerContent");
     bestSeller.innerHTML="";
     display(skinCare,bestSeller);
 
-    skincare.style="color:red";
+    skincare.style="color:#ff6781!important";
     bodycare.style="color:gray";
     haircare.style="color:gray";
     nutri.style="color:gray";
@@ -320,7 +320,7 @@ let bodyCare=[
     display(bodyCare,bestSeller);
 
     skincare.style="color:gray";
-    bodycare.style="color:red";
+    bodycare.style="color:#ff6781!important";
     haircare.style="color:gray";
     nutri.style="color:gray";
   }
@@ -332,7 +332,7 @@ let bodyCare=[
 
     skincare.style="color:gray";
     bodycare.style="color:gray";
-    haircare.style="color:red";
+    haircare.style="color:#ff6781!important";
     nutri.style="color:gray";
   }
 
@@ -345,7 +345,7 @@ let bodyCare=[
     skincare.style="color:gray";
     bodycare.style="color:gray";
     haircare.style="color:gray";
-    nutri.style="color:red";
+    nutri.style="color:#ff6781!important";
   }
 
 
@@ -484,14 +484,14 @@ let bodyCare=[
 // ------faceCream div of Top seller section
     let topcontent=document.getElementById("topCatContent")
     display(faceCream,topcontent);
-    facecream.style="color:red;"
+    facecream.style="color:#ff6781!important;"
     
     facecream.onclick=()=>{
       let topcontent=document.getElementById("topCatContent")
       topcontent.innerHTML=null;
       display(faceCream,topcontent);
 
-      facecream.style="color:red;"
+      facecream.style="color:#ff6781!important;"
       faceserum.style="color:gray;"
       facemask.style="color:gray;"
       facewash.style="color:gray;"
@@ -504,7 +504,7 @@ let bodyCare=[
       display(faceSerum,serumContent);
 
       facecream.style="color:gray;"
-      faceserum.style="color:red;"
+      faceserum.style="color:#ff6781!important;"
       facewash.style="color:gray;"
       facemask.style="color:gray;"
     }
@@ -517,7 +517,7 @@ let bodyCare=[
 
       facecream.style="color:gray;"
       faceserum.style="color:gray;"
-      facewash.style="color:red;"
+      facewash.style="color:#ff6781!important;"
       facemask.style="color:gray;"
     }
 
@@ -530,5 +530,5 @@ let bodyCare=[
     facecream.style="color:gray;"
     faceserum.style="color:gray;"
     facewash.style="color:gray;"
-    facemask.style="color:red;"
+    facemask.style="color:#ff6781!important;"
   }
