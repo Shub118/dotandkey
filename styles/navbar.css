@@ -3,7 +3,7 @@ body{
     padding: 0px;
     box-sizing: border-box;
     position: relative;
-    background-color: teal;
+    
 }
 #navbar-top{
     height: 30px;
@@ -164,7 +164,7 @@ h3{
 #navbarmenu-text-div>li:nth-child(4){
     color: red;
 }
-h2{
+#navh2{
     display: none;
 }
 #navbarmenu{
