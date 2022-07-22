@@ -52,7 +52,7 @@ function display(data){
      let addtocart = document.createElement("button")
      addtocart.innerText="Add To Cart"
      addtocart.addEventListener("click",function(){
-      cart(el)
+        cart(el)
      })
      prdiv.append(stackedprice,price);
      let div = document.createElement("div")
@@ -99,16 +99,15 @@ if(sort.value==="featured"){
     display(sorted)
 }
 })
-
 import footer from "./footer.js"
 
-document.querySelector("#toppicks-footer").innerHTML=footer();
-let dataLS =  JSON.parse(localStorage.getItem("description")) || [];
+document.querySelector("#bestseller-footer").innerHTML=footer();
+
+let bestdataLS =  JSON.parse(localStorage.getItem("description")) || [];
 function cart(el){
    
-   dataLS.push(el)
+   bestdataLS.push(el)
   
-  localStorage.setItem("description",JSON.stringify(dataLS))
-  window.location.href="cart.html"
+  localStorage.setItem("description",JSON.stringify(bestdataLS))
    
 }
