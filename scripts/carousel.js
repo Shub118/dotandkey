@@ -18,7 +18,7 @@ let carousel = (sliders, prev, next) =>{
 next.onclick = () => {
         let currentslide = sliders.querySelector(".current-slide");
         let nextslide = currentslide.nextElementSibling;
-        if (nextslide === slides[slides.length - 2]) {
+        if (nextslide === slides[slides.length-2]) {
             nextslide = slides[0]
         }
         
@@ -47,6 +47,9 @@ next.onclick = () => {
     }
 }
 
+
+
+
 let ingredients=()=>{
     let sliders = document.querySelector('.slider')
     let prev = document.querySelector(".button-left");
@@ -61,5 +64,20 @@ let skincare=()=>{
     carousel(sliders,prev,next);
 }
 
+let awards=()=>{
+    let sliders = document.querySelector('.slider3')
+    let prev = document.querySelector(".button-left3");
+    let next = document.querySelector(".button-right3");
+    carousel(sliders,prev,next);
+}
+
+let journal=()=>{
+    let sliders = document.querySelector('.slider4')
+    let prev = document.querySelector(".button-left4");
+    let next = document.querySelector(".button-right4");
+    carousel(sliders,prev,next);
+}
 ingredients();
 skincare();
+awards();
+journal();

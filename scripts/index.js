@@ -65,16 +65,13 @@ setInterval(()=>{
   }
   document.getElementById("banner2").innerHTML="";
   let a=document.createElement('a');
-  // if(id==1){
-
-  // }
   a.href="";
   let image=document.createElement('img');
   image.src=`./images/banner2/pic${id}.webp`;
   a.append(image);
   document.getElementById("banner2").append(a);
   id++;
-},4000)
+},3000)
 
 
 
