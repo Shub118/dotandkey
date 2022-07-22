@@ -2,7 +2,7 @@
 
 let navbar=()=>{
 return ` <h3 id='hamburger'>&#9776;</h3>
- <h2>&#215;</h2>
+ <h2 id="navh2">&#215;</h2>
 <div class="navbar-bottom-div">
     <img id="navbar-logo" src="https://cdn.shopify.com/s/files/1/0361/8553/8692/files/unnamed_250x_200x_2x_260x_24408e11-6e3a-4a0c-8327-74d0455f7696_260x.jpg?v=1646547348" alt="">
 </div>
@@ -66,13 +66,13 @@ function cross(){
     let x ;
     if(flag){
          x = document.querySelector('#hamburger').innerText
-        document.querySelector('#hamburger').innerText = document.querySelector('h2').innerText
+        document.querySelector('#hamburger').innerText = document.querySelector('#navh2').innerText
         document.querySelector('h2').innerText=x
         document.getElementById('navbarmenu').style.display = 'flex'
         flag = false;
     }else{
          x = document.querySelector('#hamburger').innerText
-        document.querySelector('#hamburger').innerText = document.querySelector('h2').innerText
+        document.querySelector('#hamburger').innerText = document.querySelector('#navh2').innerText
         document.querySelector('h2').innerText=x
         document.getElementById('navbarmenu').style.display = 'none'
         flag = true;
