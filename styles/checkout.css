@@ -1,0 +1,50 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Lato, sans-serif;
+    line-height: 1.3em;
+}
+#main{
+    display: flex;
+    gap: 1%;
+    width: 80%;
+    margin: auto;
+    margin-top: 4%;
+}
+#main>div{
+    border-right: 0.5px solid gray;
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+}
+input,select{
+    margin: 3% 1%;
+    font-size: medium;
+    padding: 2%;
+}
+button{
+    font-size: 20px;
+    background-color: #5c5c5c;
+    padding: 1%;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+#cont-ship{
+   width: 90%;
+   margin: auto;
+   margin-bottom: 8%;
+    display: flex;
+    justify-content: space-between;
+}
+a{
+    color: #ee5c8f;
+    text-decoration: none;
+    
+}
+a+a{
+    margin-left: 4%;
+}
+hr{
+    margin-top: 2%;
+}

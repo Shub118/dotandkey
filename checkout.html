@@ -5,10 +5,57 @@
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>CHECK_OUT</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
-    <script src='main.js'></script>
+    <link rel='stylesheet' type='text/css' media='screen' href='./styles/checkout.css'>
 </head>
 <body>
-    <h1>WELCOME TO CHECKOUT</h1>
+    <a href="index.html"><img src="https://cdn.shopify.com/s/files/1/0361/8553/8692/collections/top_picks_1_1944x.jpg?v=1655964483" alt="" height="200px" width="100%"></a>
+    <div id="main">
+    
+    <div id="detail">
+        <h3>Contact information</h3>
+        <input type="text" placeholder="Email">
+
+        <h3>Shipping address</h3>
+        <select name="" id="country">
+            <option value="in">India</option>
+            <option value="bh">Bhutan</option>
+            <option value="np">Nepal</option>
+            <option value="ag">Afghanistan</option>
+            <option value="sl">Sri Lanka</option>
+            <option value="mm">Mayanmar</option>
+        </select>
+        <div>
+            <input type="text" placeholder="First name">
+            <input type="text" placeholder="Last Name">
+        </div>
+        <input type="text" placeholder="Address">
+        <input type="text" placeholder="Apartment,Suite,etc.">
+        <input type="text" placeholder="City">
+        <input type="text" placeholder="PIN Code">
+        <input type="text" placeholder="91 Phone">
+        <div id="cont-ship">
+            <a href="cart.html"><span>&#8592; return to cart</span></a>
+            <button>PAY NOW</button>
+        </div>
+        <div>
+            <hr>
+        <a href="">Refund policy</a>
+        <a href="">Shipping policy</a>
+        <a href="">Privacy policy</a>
+        <a href="">Terms of services</a>
+        </div>
+        
+    </div>
+        <div >
+            <h3>Pay now</h3>
+            <input type="text" placeholder="gift card or promo code">
+            <button>APPLY</button>
+            <hr>
+            <h3>Total</h3> 
+            <h3 id="total"></h3>
+        </div>
+        
+    </div>
 </body>
+<script src="./scripts/checkout.js" type="module"></script>
 </html>
