@@ -1,4 +1,4 @@
-body{
+*{
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
@@ -142,10 +142,8 @@ h3{
 #navbarmenu-text-div>li:hover {
     text-decoration: underline;
 }
-/* width */
-::-webkit-scrollbar{
-    
-}
+
+
 
 #navbarmenu>div:first-child {
     overflow: scroll;
