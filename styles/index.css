@@ -235,9 +235,6 @@ div h1{
     font-weight: bolder;
     cursor: pointer;
 }
-#bar:visit{
-    color:pink;
-}
 #spotlight{
     width:95%;
     margin:auto;
@@ -308,37 +305,55 @@ div h1{
     width:100%;
 }
 
-/* Ingredeints  */
+/*===============Carousel=============*/
 .carousel{
     width:100%;
+    overflow: hidden;
     height:300px;
     position:relative;
 }
-.carouse_container{
+.carousel2{
+    width:100%;
+    height:450px;
+    overflow:hidden;
     position:relative;
- }
+}
 .slider{
-
+    display:flex;
+    gap:20px;
     height:100%;
-    transition:transform 350ms ease-in;
+    transition:transform 350ms ease-in translate3d(-3336px, 0px, 0px);
     list-style: none;
-
+}
+.slider2{
+    display:flex;
+    gap:100px;
+    height:100%;
+    transition:transform 350ms ease-in translate3d(-3336px, 0px, 0px);
+    list-style: none;
 }
 .slide{
-    width:400px;
+    margin-left: 20px;
+    width:350px;
+    height:280px;
+    border-radius: 5px;
+    bottom:0;
+    top:0;
+}
+.slide2{
+    /* margin-left: 15px; */
+    width:280px;
     height:300px;
     border-radius: 5px;
     bottom:0;
     top:0;
-    border:2px solid green;
-}
-#carousel>#ul{
-    display:flex;
-    gap:30px;
 }
 .slide>img{
-    width:400px;
-    height:300px;
+    width:375px;
+    border-radius: 5px;
+}
+.slide2>img{
+    width:350px;
     border-radius: 5px;
 }
 .button_indicator{
@@ -351,10 +366,11 @@ div h1{
     transform: translateY(-50%);
     cursor:pointer;
 }
-.button-left{
+.button-left,.button-left2{
     left:0;
 }
-.button-right{
+.button-right,
+.button-right2{
     right:0;
 }
 .button_indicator img{
@@ -371,7 +387,7 @@ div h1{
     border:0.5px solid black;
     background-color: white;
     border-radius: 0px;
-    padding:6px 25px;
+    padding:6px 40px;
     font-weight: 550;
     font-size: 16px;
     margin-bottom:50px;
