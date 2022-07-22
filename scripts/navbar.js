@@ -80,5 +80,6 @@ function cross(){
    
 }
 
-export default navbar()
+export  {navbar,navbarmenu,cross}
+
 
