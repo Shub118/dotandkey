@@ -1,5 +1,10 @@
+import {navbar,navbarmenu,cross} from './navbar.js'
 import footer from "./footer.js"
+document.querySelector('#navbar-bottom').innerHTML = navbar()
+document.querySelector('#navbarmenu').innerHTML = navbarmenu()
+
 document.querySelector('#footer').innerHTML = footer()
+
 // JSON.parse(localStorage.getItem("cart"))
 let cartData = [
     {image:"https://cdn.shopify.com/s/files/1/0361/8553/8692/products/vit_c_1_ebdbf467-a1d3-454f-a18f-e9e753de65c8_720x.png?v=1657950494",

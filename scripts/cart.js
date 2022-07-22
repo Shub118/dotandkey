@@ -1,6 +1,11 @@
 import footer from "./footer.js";
-// import { getDoc,crt } from "./desc.js";
+import {navbar,navbarmenu,cross} from './navbar.js'
 
+document.querySelector('#navbar-bottom').innerHTML = navbar()
+document.querySelector('#navbarmenu').innerHTML = navbarmenu()
+
+
+// /////////////////////////////////
 let getDoc = (x) =>{
     return document.querySelector(x)
 }
@@ -34,7 +39,7 @@ let cartData = [{
     let display = (data)=>{
         getDoc('#cont').innerHTML = null;
         let stotal = getDoc('#stotal>h4+h4');
-        data.forEach(({img,titl,pr}) =>{
+        data.forEach(({img,titl,pr},ind) =>{
             let div = crt('div');
             let div1 = crt('div');
             let image = crt('img');
@@ -85,21 +90,18 @@ let cartData = [{
 //////////////////////////////////////////delete//////
 
 rem.addEventListener('click',()=>{
-    console.log('working')
+    cartData.splice(ind,1)
+    display(cartData)
 })
     })
     }
 
     display(cartData)
-    // ////////////////////sort//////////////////
-    cartData.sort((a,b)=>{
-        return a.pr-b.pr
-    })
 
 ///////////////////////checkout//////////////
-
+// let t = getDoc('#stotal>h4+h4')
 let checkout = () =>{
-    localStorage.setItem("subtotal",JSON.stringify(stotal.innerText))
+    localStorage.setItem("subtotal",JSON.stringify(x))
     window.location.href = 'checkout.html'
 }
 getDoc('#ckot').addEventListener('click',checkout)
