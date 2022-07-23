@@ -1,9 +1,11 @@
 body{
     margin:0px;
     padding:0px;
-    text-align: center;
     box-sizing: border-box;
     overflow-x: hidden;
+}
+#bigContainer{
+    text-align: center;
 }
 .slogan{
     color:grey;
@@ -50,7 +52,7 @@ div h1{
 .pre, .next {
     cursor: pointer;
     position: absolute;
-    top: 37%;
+    top: 4%;
     width: auto;
     margin-top: -22px;
     padding: 16px;
@@ -328,7 +330,7 @@ div h1{
     bottom:0;
     top:0;
 }
-.slide>img{
+.slide img{
     width:375px;
     border-radius: 5px;
 }
@@ -364,7 +366,7 @@ div h1{
 }
 .slider2{
     display:flex;
-    gap:100px;
+    gap:150px;
     height:100%;
     transition:transform 350ms ease-in translate3d(-3336px, 0px, 0px);
     list-style: none;
@@ -377,7 +379,7 @@ div h1{
     bottom:0;
     top:0;
 }
-.slide2>img{
+.slide2 img{
     width:350px;
     border-radius: 5px;
 }
@@ -422,7 +424,7 @@ div h1{
     word-spacing: 3px;
     color:dimgray;
 }
-p+p{
+#cleanbeauty>div p+p{
     margin-top: 50px;
 }
 .head4{
