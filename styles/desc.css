@@ -1,5 +1,6 @@
 *{
     text-align: center;
+    position: relative;
 }
 #main{
     width: 80%;
@@ -54,12 +55,12 @@
     border-radius: 20px;
 }
 
-li::marker{
+#offer li::marker{
         content: '✦ ';
         color: gray;
         font-size: 20px;
 }
-li{
+#offer li{
     font-family: 'Gilroy Regular';
     font-style: normal;
     font-weight: 500;
