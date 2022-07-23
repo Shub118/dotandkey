@@ -4,7 +4,7 @@ let navbar=()=>{
 return ` <h3 id='hamburger'>&#9776;</h3>
  <h2 id="navh2">&#215;</h2>
 <div class="navbar-bottom-div">
-    <img id="navbar-logo" src="https://cdn.shopify.com/s/files/1/0361/8553/8692/files/unnamed_250x_200x_2x_260x_24408e11-6e3a-4a0c-8327-74d0455f7696_260x.jpg?v=1646547348" alt="">
+  <a href="index.html"><img id="navbar-logo" src="https://cdn.shopify.com/s/files/1/0361/8553/8692/files/unnamed_250x_200x_2x_260x_24408e11-6e3a-4a0c-8327-74d0455f7696_260x.jpg?v=1646547348" alt=""> </a>
 </div>
 <div class="navbar-bottom-div3">
     <div class="small-div" >
@@ -31,21 +31,21 @@ return ` <h3 id='hamburger'>&#9776;</h3>
 let navbarmenu=()=>{
     return `<div class="navbarmenu-div">
     <div id="navbarmenu-text-div">
-        
-            <li>WHAT'S NEW?</li>
-            <li>TOP PICKS</li>
-            <li>BEST SELLERS</li>
-            <li>SPECIAL STORE</li>
-            <li>SHOP BY INGREDIENTS</li>
-            <li>SHOP BY CONCERN</li>
-            <li>SHOP ALL PRODUCTS</li>
-            <li>HAIR CARE</li>
-            <li>BODY CARE</li>
-            <li>IKWI NUTRITION</li>
-            <li>DOWNLOAD THE APP</li>
-            <li>KNOW US BETTER</li>
-            <li>PROFILE</li>
-            <li>LOGIN</li>
+            
+            <li> <a href="bestseller.html">WHAT'S NEW?</a></li>
+            <li><a href="toppicks.html">TOP PICKS</a></li>
+             <li><a href="bestseller.html">BEST SELLERS</a></li>
+            <li> <a href="bestseller.html">SPECIAL STORE</a> </li>
+            <li> <a href="bestseller.html">SHOP BY INGREDIENTS</a></li>
+            <li> <a href="bestseller.html">SHOP BY CONCERN</a></li>
+            <li> <a href="bestseller.html">SHOP ALL PRODUCTS</a></li>
+            <li> <a href="bestseller.html">HAIR CARE</a></li>
+            <li> <a href="bestseller.html">BODY CARE</a> </li>
+            <li> <a href="bestseller.html">IKWI NUTRITION</a></li>
+            <li> <a href="bestseller.html">DOWNLOAD THE APP</a></li>
+            <li> <a href="bestseller.html">KNOW US BETTER</a></li>
+            <li> <a href="login.html">PROFILE</a></li>
+            <li> <a href="signup.html">LOGIN</a></li>
         
     </div>
 </div>
@@ -58,6 +58,7 @@ let navbarmenu=()=>{
 }
 document.getElementById('navbar-bottom').innerHTML = navbar()
 document.getElementById('navbarmenu').innerHTML=navbarmenu();
+
 
 document.getElementById('hamburger').addEventListener('click',cross)
 let flag = true;

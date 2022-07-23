@@ -25,7 +25,8 @@ body{
 
 }
 #navbar-bottom{
-    height: 70px;
+    height: 90px;
+    justify-content: space-around;
     width: 100%;
     /* position: absolute; */
     top: 25px;
@@ -35,6 +36,7 @@ body{
 }
 #navbar-bottom{
     display: flex;
+    align-items: center;
 }
 .navbar-bottom-div{
     height: 100%;
@@ -43,7 +45,7 @@ body{
 }
 #navbar-logo{
     
-    height: 50%;
+    /* height: 50%; */
     width: 35%;
     margin-left: 40%;
     margin-top: 7px;
@@ -94,8 +96,8 @@ body{
     gap: 20px;
 }
 h3{
-    margin-left: 18%;
-    margin-right: 10%;
+    /* margin-left: 8%; */
+    /* margin-right: 10%; */
     cursor: pointer;
 }
 #navbarmenu{
@@ -128,7 +130,7 @@ h3{
     width: 100%;
     border-radius: 10px;
 }
-#navbarmenu-text-div>li{
+#navbarmenu-text-div>li,li a{
     font-family: sans-serif;
     font-size: 13px;
     font-weight: 500;
@@ -168,4 +170,9 @@ h3{
 }
 #navbarmenu{
     display:none;
+}
+li a{
+    color: rgb(0, 0, 0,0.8);
+    text-decoration: none;
+    font-family: sans-serif;
 }
