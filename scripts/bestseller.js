@@ -10,7 +10,7 @@ function data(i,id,c,t,d,dis,sp,p,r){
     this.rating=r
 }
 
-let productdata1=new data("https://cdn.shopify.com/s/files/1/0361/8553/8692/products/vit_c_1_ebdbf467-a1d3-454f-a18f-e9e753de65c8_360x.png?v=1657950494","p1","moisturizer","Vitamin C Moisturizer With Kakadu Plum & Vitamin E","Makes Skin Glow | Moisturizes | Even Tones OILY  DRY SKIN TYPE",20,499,399,"4.7 ★");
+let productdata1=new data("https://cdn.shopify.com/s/files/1/0361/8553/8692/products/Artboard1-3_16_360x.jpg?v=1658396272","p1","moisturizer","Vitamin C Moisturizer With Kakadu Plum & Vitamin E","Makes Skin Glow | Moisturizes | Even Tones OILY  DRY SKIN TYPE",20,499,399,"4.7 ★");
 let productdata2 = new data("https://cdn.shopify.com/s/files/1/0361/8553/8692/products/20VITC_2_360x.jpg?v=1656934686","p2","serum","20% Vitamin C Serum with Blood Orange Combination","Pure L-ascorbic Acid | Freshly Made FOR ALL SKIN TYPES",20,499,450,"4.7 ★");
 let productdata3 = new data("https://cdn.shopify.com/s/files/1/0361/8553/8692/products/CICASUNSCREEN_2_360x.jpg?v=1656934758","p3","sunscreen","Cica + Niacinamide Face Sunscreen SPF 50 PA+++","OMC Oxybenzone-free |  Easily blendable | Matte finish OILY, ACNE PRONE & SENSITIVE SKIN",20,499,399,"4.0 ★");
 let productdata4 = new data("https://cdn.shopify.com/s/files/1/0361/8553/8692/products/WATERMELONWASH_1_360x.jpg?v=1656934311","p4","facewash","Watermelon Super Glow Vitamin C Face Wash Gel","Sulphate-free | Gently exfoliates | Boosts skin glow FOR OILY, NORMAL, COMBINATION SKIN",25,650,600,"4.4 ★")
