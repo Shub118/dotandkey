@@ -8,7 +8,7 @@ function data(i,id,c,t,d,dis,sp,p,r){
     this.stackedprice=sp
     this.price=p
     this.rating=r
-}
+};
 
 let productdata1=new data("https://cdn.shopify.com/s/files/1/0361/8553/8692/products/Artboard1-3_16_360x.jpg?v=1658396272","p1","moisturizer","Vitamin C Moisturizer With Kakadu Plum & Vitamin E","Makes Skin Glow | Moisturizes | Even Tones OILY  DRY SKIN TYPE",20,499,399,"4.7 ★");
 let productdata2 = new data("https://cdn.shopify.com/s/files/1/0361/8553/8692/products/20VITC_2_360x.jpg?v=1656934686","p2","serum","20% Vitamin C Serum with Blood Orange Combination","Pure L-ascorbic Acid | Freshly Made FOR ALL SKIN TYPES",20,499,450,"4.7 ★");
