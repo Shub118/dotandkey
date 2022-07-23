@@ -67,12 +67,12 @@ function cross(){
     let x ;
     if(flag){
          x = document.querySelector('#hamburger').innerText
-        document.querySelector('#hamburger').innerText = document.querySelector('#navh2').innerText
+        document.querySelector('#hamburger').innerText = document.querySelector('#navh2').innerText;
         document.querySelector('h2').innerText=x
         document.getElementById('navbarmenu').style.display = 'flex'
         flag = false;
     }else{
-         x = document.querySelector('#hamburger').innerText
+         x = document.querySelector('#hamburger').innerText;
         document.querySelector('#hamburger').innerText = document.querySelector('#navh2').innerText
         document.querySelector('h2').innerText=x
         document.getElementById('navbarmenu').style.display = 'none'
