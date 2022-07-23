@@ -2,9 +2,7 @@
     font-family: Montserrat,sans-serif;
     line-height: 1.4;
 }
-body{
-    position: relative;
-}
+
 h1{
     margin-top: 5%;
     text-align: center;
@@ -20,10 +18,9 @@ input{
     margin-left: 10%;
 }
 #qt{
-    width: 85%;
+    width: 95%;
     display: flex;
     justify-content: flex-end;
-    gap: 12%;
 }
 #cont{
     width: 80%;
@@ -31,7 +28,7 @@ input{
 }
 #cont>div{
     display: flex;
-    gap: 7%;
+    gap: 5%;
     margin-top: 1%;
 }
 #cont>div>:nth-child(3){
@@ -62,8 +59,8 @@ input{
     font-size: medium;
     cursor: pointer;
 }
-#cont>img{
-    width: 80%;
+#cont>div>img{
+    width: 10%;
 }
 #stotal{
     text-align: right;
