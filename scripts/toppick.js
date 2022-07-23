@@ -101,8 +101,14 @@ if(sort.value==="featured"){
 })
 
 import footer from "./footer.js"
+import {navbar,navbarmenu,cross} from "./navbar.js"
+
 
 document.querySelector("#toppicks-footer").innerHTML=footer();
+document.getElementById('navbar-bottom').innerHTML = navbar()
+document.getElementById('navbarmenu').innerHTML=navbarmenu();
+
+document.getElementById('hamburger').addEventListener('click',cross)
 let dataLS =  JSON.parse(localStorage.getItem("description")) || [];
 function cart(el){
    

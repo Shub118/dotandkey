@@ -109,5 +109,5 @@ function cart(el){
    bestdataLS.push(el)
   
   localStorage.setItem("description",JSON.stringify(bestdataLS))
-   
+  window.location.href="cart.html"
 }
