@@ -66,7 +66,7 @@ function cross(){
    
     let x ;
     if(flag){
-         x = document.querySelector('#hamburger').innerText
+         x = document.querySelector('#hamburger').innerText;
         document.querySelector('#hamburger').innerText = document.querySelector('#navh2').innerText;
         document.querySelector('h2').innerText=x
         document.getElementById('navbarmenu').style.display = 'flex';
@@ -74,7 +74,7 @@ function cross(){
     }else{
          x = document.querySelector('#hamburger').innerText;
         document.querySelector('#hamburger').innerText = document.querySelector('#navh2').innerText
-        document.querySelector('h2').innerText=x
+        document.querySelector('h2').innerText=x;
         document.getElementById('navbarmenu').style.display = 'none'
         flag = true;
     }
