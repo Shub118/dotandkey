@@ -36,7 +36,7 @@ function checkData(){
             console.log(elem)
             if(elem.cvv == document.querySelector("#cvv").value){
                 alert('PAYMENT SUCCESSFULL')
-                window.location.href="otp.html"
+                window.location.href="index.html"
                 
             }
             else{
