@@ -16,10 +16,10 @@ return ` <h3 id='hamburger'>&#9776;</h3>
         <img src="https://cdn.shopify.com/s/files/1/0361/8553/8692/files/Group_346.svg?v=1655211633" alt="">
     </div>
     <div  class="small-div" >
-        <img src="https://cdn-icons-png.flaticon.com/128/4601/4601551.png" alt="">
+        <a href="./cart.html"><img src="https://cdn-icons-png.flaticon.com/128/4601/4601551.png"></a>
     </div>
     <div  class="small-div" >
-       <img src="https://cdn-icons-png.flaticon.com/128/709/709579.png" alt="">
+        <a  href="./login.html"><img src="https://cdn-icons-png.flaticon.com/128/709/709579.png"></a>
     </div>
     
    

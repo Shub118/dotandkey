@@ -82,12 +82,10 @@ body{
     width: 20px;
     /* border: 1px solid red; */
 }
-.small-div>img{
+.small-div>a>img,.small-div>img{
     height: 22px;
     width: 100%;
     cursor: pointer;
-    
-
 }
 .navbar-bottom-div3{
     display: flex;
