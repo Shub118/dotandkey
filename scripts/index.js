@@ -2,6 +2,13 @@ import display from "../components/display.js"
 import footer from "./footer.js";
 document.getElementById("footer").innerHTML=footer();
 
+
+import {navbar,navbarmenu,cross} from "./navbar.js"
+document.getElementById('navbar-bottom').innerHTML = navbar()
+document.getElementById('navbarmenu').innerHTML=navbarmenu();
+
+document.getElementById('hamburger').addEventListener('click',cross)
+
 let slideIndex = 1;
 showSlides(slideIndex);
 
@@ -83,8 +90,10 @@ let newArrival=[
     rating:"4.7/5",
     person:"(28)",
     title:"Cica + Niacinamide Face Sunscreen SPF 50 PA+++",
-    cancelPrice:595,
+    stackedprice:595,
     price:536.00,
+    productID:"i1",
+    description:"Targets Pigmentation | Non-Drying Formula | Blood Orange",
   },
   {
     image:"./images/newArrive/pic2.webp",
@@ -92,8 +101,10 @@ let newArrival=[
     rating:"4.7/5",
     person:"(46)",
     title:"20% Vitamin C Serum with Blood Orange | For Skin Glow",
-    cancelPrice:665,
+    stackedprice:665,
     price:499.00,
+    productID:"i2",
+    descritpion:"5% Lactic, Glycolic & Salicylic Acid | Gently Exfoliates | Pore Purifying",
   },
   {
     image:"./images/newArrive/pic3.webp",
@@ -101,8 +112,10 @@ let newArrival=[
     rating:"5.0/5",
     person:"(21)",
     title:"Watermelon Skin Glow Face Toner With Glycolic + Lactic|",
-    cancelPrice:595,
+    stackedprice:595,
     price:316.00,
+    productID:"i3",
+    description:"Pure L-ascorbic Acid | Freshly Made",
   },
   {
     image:"./images/newArrive/pic4.webp",
@@ -110,8 +123,10 @@ let newArrival=[
     rating:"4.9/5",
     person:"(52)",
     title:"Cica & Green Tea Face Wash With Salicylic| Treats Acne",
-    cancelPrice:395,
-    price:356.00
+    stackedprice:395,
+    price:356.00,
+    productID:"i4",
+    description:"OMC Oxybenzone-free |  Easily blendable | Matte finish",
   }
 ]
 let newArriveContainer=document.getElementById("newArriveContent");
@@ -141,8 +156,10 @@ let skinCare=[
     discount:14,
     rating:"4.8/5",
     person:"(245)",
-    cancelPrice:700,
+    stackedprice:700,
     price:599,
+    productID:"i5",
+    description:"Makes Skin Glow | Moisturizes | Even Tones",
   },
   {
     image:"./images/skicare/pic2.webp",
@@ -150,8 +167,10 @@ let skinCare=[
     discount:15,
     rating:"4.7/5",
     person:"(248)",
-    cancelPrice:745,
+    stackedprice:745,
     price:633,
+    productID:"i6",
+    description:"Balances microbiome | Strengthens skin barrier | Oil-Free",
   },
   {
     image:"./images/skicare/pic3.webp",
@@ -159,8 +178,10 @@ let skinCare=[
     discount:28,
     rating:"4.7/5",
     person:"(234)",
-    cancelPrice:695,
+    stackedprice:695,
     price:499,
+    productID:"i7",
+    description:"Unclogs Pores | Fades acne scars | Fights Pollution",
   },
   {
     image:"./images/skicare/pic4.webp",
@@ -168,8 +189,10 @@ let skinCare=[
     discount:25,
     rating:"4.6/5",
     person:"(220)",
-    cancelPrice:665,
+    stackedprice:665,
     price:499,
+    productID:"i8",
+    description:"Spot Correcting | Balances oil  | Controls breakouts",
   },
   ];
 
@@ -180,8 +203,10 @@ let bodyCare=[
     discount:15,
     rating:"4.7/5",
     person:"(23)",
-    cancelPrice:545,
+    stackedprice:545,
     price:463,
+    productID:"i9",
+    description:"A soft gel scrub lovingly curated with Damask Rose, French Lavender Oil & crushed walnut shells ",
   },
   {
     image:"./images/bodycare/pic2.webp",
@@ -189,8 +214,10 @@ let bodyCare=[
     discount:15,
     rating:"4.8/5",
     person:"(27)",
-    cancelPrice:595,
+    stackedprice:595,
     price:505,
+    productID:"i10",
+    description:"Citrusy & lightweight body serum lotion with 3 types of vitamin C that hydrates & tones for soft",
   },
   {
     image:"./images/bodycare/pic3.webp",
@@ -198,8 +225,10 @@ let bodyCare=[
     discount:20,
     rating:"4.8/5",
     person:"(34)",
-    cancelPrice:595,
+    stackedprice:595,
     price:476,
+    productID:"i11",
+    description:"With nourishing Damask Rose oil, lavender & hyaluronic acid, this body serum lotion spreads evenly for hydrated",
   },
   {
     image:"./images/bodycare/pic4.webp",
@@ -207,8 +236,10 @@ let bodyCare=[
     discount:31,
     rating:"4.6/5",
     person:"(220)",
-    cancelPrice:665,
+    stackedprice:665,
     price:499,
+    productID:"i12",
+    description:"Get happy, bouncy skin with lemony zing! A soft cushiony body yoghurt squeezed with Avalon Lemon & Verbena, it hydrates & pampers for even-toned, fresh & glowing skin.",
   }];
 
   let hairCare=[
@@ -218,8 +249,10 @@ let bodyCare=[
       discount:20,
       rating:"4.8/5",
       person:"(50)",
-      cancelPrice:695,
+      stackedprice:695,
       price:556,
+      productID:"i13",
+      description:"Strengthens hair follicles | Boosts volume | Reduces cuticle damage",
     },
     {
       image:"./images/haircare/pic2.webp",
@@ -227,8 +260,10 @@ let bodyCare=[
       discount:20,
       rating:"4.7/5",
       person:"(28)",
-      cancelPrice:645,
+      stackedprice:645,
       price:516,
+      productID:"i14",
+      description:"Pea Peptide Protein, Hydrolyzed Keratin and Linoleic Acid and plant-nutrients",
     },
     {
       image:"./images/haircare/pic3.webp",
@@ -236,8 +271,10 @@ let bodyCare=[
       discount:20,
       rating:"4.7/5",
       person:"(32)",
-      cancelPrice:695,
+      stackedprice:695,
       price:556,
+      productID:"i15",
+      description:"Hyaluronic Acid & Ceramides & plant nutrients like Quinoa Protein & Olive",
     },
     {
       image:"./images/haircare/pic4.webp",
@@ -245,8 +282,10 @@ let bodyCare=[
       discount:20,
       rating:"4.7/5",
       person:"(22)",
-      cancelPrice:645,
+      stackedprice:645,
       price:516,
+      productID:"i16",
+      description:"Ceramides, Vegetal Keratin and plant-nutrients like Quinoa Protein and Olive",
     },
   ];
 
@@ -257,8 +296,10 @@ let bodyCare=[
       discount:"",
       rating:"4.7/5",
       person:"(18)",
-      cancelPrice:"",
+      stackedprice:"",
       price:525,
+      productID:"i17",
+      description:"Nutritional mint strips with valerian and melatonin ",
     },
     {
       image:"./images/nutrition/pic2.webp",
@@ -266,8 +307,10 @@ let bodyCare=[
       discount:"",
       rating:"4.8/5",
       person:"(17)",
-      cancelPrice:"",
+      stackedprice:"",
       price:595,
+      productID:"i18",
+      description:"Gummies with Ashwagandha & L-Theanine",
     },
     {
       image:"./images/nutrition/pic3.webp",
@@ -275,8 +318,10 @@ let bodyCare=[
       discount:"",
       rating:"4.7/5",
       person:"(24)",
-      cancelPrice:"",
+      stackedprice:"",
       price:525,
+      productID:"i19",
+      description:"Nutritional Mint strips with biotin — for healthy, strong & beautiful hair.",
     },
     {
       image:"./images/nutrition/pic4.webp",
@@ -284,8 +329,10 @@ let bodyCare=[
       discount:"",
       rating:"5.0/5",
       person:"(17)",
-      cancelPrice:"",
+      stackedprice:"",
       price:645,
+      productID:"i20",
+      description:"Gummies with Natural Biotin & Vitamin A, C & E",
     },
   ];
 
@@ -355,8 +402,10 @@ let bodyCare=[
       discount:"25",
       rating:"4.7/5",
       person:"(222)",
-      cancelPrice:945,
+      stackedprice:945,
       price:709,
+      productID:"i21",
+      description:"Firms skin | Boosts collagen | Delays aging",
     },
     {
       image:"./images/facecream/pic2.webp",
@@ -364,8 +413,10 @@ let bodyCare=[
       discount:"15",
       rating:"4.7/5",
       person:"(248)",
-      cancelPrice:745,
+      stackedprice:745,
       price:633,
+      productID:"i22",
+      description:"Balances microbiome | Strengthens skin barrier | Oil-Free",
     },
     {
       image:"./images/facecream/pic3.webp",
@@ -373,8 +424,10 @@ let bodyCare=[
       discount:"14",
       rating:"4.8/5",
       person:"(245)",
-      cancelPrice:700,
+      stackedprice:700,
       price:599,
+      productID:"i23",
+      description:"Makes Skin Glow | Moisturizes | Even Tones",
     },
     {
       image:"./images/facecream/pic4.webp",
@@ -382,8 +435,10 @@ let bodyCare=[
       discount:"5",
       rating:"4.8/5",
       person:"(137)",
-      cancelPrice:595,
+      stackedprice:595,
       price:565,
+      productID:"i24",
+      description:"Calms skin | Fades acne scars | Reduces inflammation",
     }]
 
   let faceSerum=[
@@ -393,8 +448,10 @@ let bodyCare=[
       discount:"25",
       rating:"4.6/5",
       person:"(220)",
-      cancelPrice:665,
+      stackedprice:665,
       price:499,
+      productID:"i25",
+      description:"Spot Correcting | Balances oil  | Controls breakouts",
     },
     {
       image:"./images/faceserum/pic2.webp",
@@ -402,8 +459,10 @@ let bodyCare=[
       discount:"25",
       rating:"4.7/5",
       person:"(296)",
-      cancelPrice:665,
+      stackedprice:665,
       price:499,
+      productID:"i26",
+      description:"Vitamin C and antioxidants from acai berries",
     },
     {
       image:"./images/faceserum/pic3.webp",
@@ -411,8 +470,10 @@ let bodyCare=[
       discount:"25",
       rating:"4.7/5",
       person:"(348)",
-      cancelPrice:795,
+      stackedprice:795,
       price:599,
+      productID:"i27",
+      description:"Even skin tone | Natural Vitamin C | Brightens & Firms",
     }]
 
   let faceWash=[
@@ -422,8 +483,10 @@ let bodyCare=[
       discount:"25",
       rating:"4.9/5",
       person:"(82)",
-      cancelPrice:395,
+      stackedprice:395,
       price:296,
+      productID:"i28",
+      description:"Targets Pigmentation | Non-Drying Formula | Blood Orange Infused",
     },
     {
       image:"./images/facewash/pic2.webp",
@@ -431,8 +494,10 @@ let bodyCare=[
       discount:"10",
       rating:"4.9/5",
       person:"(53)",
-      cancelPrice:395,
+      stackedprice:395,
       price:356,
+      productID:"i29",
+      description:"5% Lactic, Glycolic & Salicylic Acid | Gently Exfoliates | Pore",
     },
     {
       image:"./images/facewash/pic3.webp",
@@ -440,8 +505,10 @@ let bodyCare=[
       discount:"10",
       rating:"4.7/5",
       person:"(81)",
-      cancelPrice:395,
+      stackedprice:395,
       price:356,
+      productID:"i30",
+      description:"Sulphate-free | Gently exfoliates | Boosts skin glow",
     }]
 
   let faceMask=[
@@ -451,8 +518,10 @@ let bodyCare=[
       discount:"28",
       rating:"4.8/5",
       person:"(235)",
-      cancelPrice:695,
+      stackedprice:695,
       price:499,
+      productID:"i31",
+      description:"Unclogs Pores | Fades acne scars | Fights Pollution",
     },
     {
       image:"./images/facemask/pic2.webp",
@@ -460,8 +529,10 @@ let bodyCare=[
       discount:"28",
       rating:"4.7/5",
       person:"(143)",
-      cancelPrice:695,
+      stackedprice:695,
       price:499,
+      productID:"i32",
+      description:"Deep cleanses | Reverses dullness | Even tones skin",
     },
     {
       image:"./images/facemask/pic3.webp",
@@ -469,8 +540,10 @@ let bodyCare=[
       discount:"28",
       rating:"4.9/5",
       person:"(297)",
-      cancelPrice:695,
+      stackedprice:695,
       price:499,
+      productID:"i33",
+      description:"Sandalwood and lemon verbena",
     }]
 
     let facecream=document.getElementById("cream");

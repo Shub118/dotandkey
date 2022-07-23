@@ -37,7 +37,7 @@ function display(data,container){
         prices.setAttribute("class", "price");
         let strikepric = document.createElement("span");
         strikepric.setAttribute("class", "strikeprice")
-        strikepric.innerText = `Rs.${element.cancelPrice}.00`;
+        strikepric.innerText = `Rs.${element.strikedprice}.00`;
 
         let prodPric = document.createElement("p");
         prodPric.setAttribute("class", "prodPrice");
@@ -50,6 +50,11 @@ function display(data,container){
         btn.addEventListener("click", function () {
             addCart(element);
         });
+        prod.addEventListener("click",()=>{
+            localStorage.setItem("description",JSON.stringify(element))
+            console.log(element)
+            window.location.href="desc.html"
+          })
         prod.setAttribute("class","prod");
         prod.append(discount, images, ratRev, prodNam, prices, btn);
         container.append(prod);
