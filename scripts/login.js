@@ -1,5 +1,16 @@
 
+import {navbar,navbarmenu,cross} from "./navbar.js"
 
+
+document.getElementById('navbar-bottom').innerHTML = navbar()
+document.getElementById('navbarmenu').innerHTML=navbarmenu();
+
+
+document.getElementById('hamburger').addEventListener('click',cross);
+
+import footer from "./footer.js"
+
+document.getElementById("footer").innerHTML = footer();
 
 var form = document.querySelector("#form");
     var userData = JSON.parse(localStorage.getItem("userData"))
