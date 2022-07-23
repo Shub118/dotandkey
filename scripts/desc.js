@@ -6,28 +6,28 @@ document.getElementById('hamburger').addEventListener('click',cross);
 
 document.querySelector('#footer').innerHTML = footer()
 
-// JSON.parse(localStorage.getItem("cart"))
-let cartData = [
-    {image:"https://cdn.shopify.com/s/files/1/0361/8553/8692/products/vit_c_1_ebdbf467-a1d3-454f-a18f-e9e753de65c8_720x.png?v=1657950494",
-description:'Makes Skin Glow | Moisturizes | Even Tones OILY, DRY SKIN TYPE',
-title:"Vitamin C Moisturizer With Kakadu Plum & Vitamin E| Fades Pigmentation & Dark Spots| Oily & Dry Skin| Women and Men",
- productID:"p12",
- category:"moisturizer",
- price:"599",
-stackedPrice:800}
-]
-// let data = JSON.parse(localStorage.getItem("description"))
-let data = {image:"https://cdn.shopify.com/s/files/1/0361/8553/8692/products/vit_c_1_ebdbf467-a1d3-454f-a18f-e9e753de65c8_720x.png?v=1657950494",
-description:'Makes Skin Glow | Moisturizes | Even Tones OILY, DRY SKIN TYPE',
-title:"Vitamin C Moisturizer With Kakadu Plum & Vitamin E",
- productID:"p1",
- category:"moisturizer",
- price:"599",
-stackedPrice:800,
-rating:3}
+let cartData = JSON.parse(localStorage.getItem("cartdata")) || []
+// let cartData = [
+//     {image:"https://cdn.shopify.com/s/files/1/0361/8553/8692/products/vit_c_1_ebdbf467-a1d3-454f-a18f-e9e753de65c8_720x.png?v=1657950494",
+// description:'Makes Skin Glow | Moisturizes | Even Tones OILY, DRY SKIN TYPE',
+// title:"Vitamin C Moisturizer With Kakadu Plum & Vitamin E| Fades Pigmentation & Dark Spots| Oily & Dry Skin| Women and Men",
+//  productID:"p12",
+//  category:"moisturizer",
+//  price:"599",
+// stackedPrice:800}
+// ]
+let data = JSON.parse(localStorage.getItem("description")) 
+// let data = {image:"https://cdn.shopify.com/s/files/1/0361/8553/8692/products/vit_c_1_ebdbf467-a1d3-454f-a18f-e9e753de65c8_720x.png?v=1657950494",
+// description:'Makes Skin Glow | Moisturizes | Even Tones OILY, DRY SKIN TYPE',
+// title:"Vitamin C Moisturizer With Kakadu Plum & Vitamin E",
+//  productID:"p1",
+//  category:"moisturizer",
+//  price:"599",
+// stackedPrice:800,
+// rating:3}
 
 // destructuring//
-let {image,description,title,productID,category,price,stackedPrice,rating} = data
+let {image,description,title,productID,category,price,stackedprice,rating} = data
 // //
 
 let getDoc = (x)=> {
@@ -50,7 +50,7 @@ ttl.innerText = title
 let pr = crt('h2')
 pr.innerText = `RS: ${price}`
 let sPrice = crt('h2')
-sPrice.innerText = `RS: ${stackedPrice}`
+sPrice.innerText = `RS: ${stackedprice}`
 sPrice.style.textDecoration = 'line-through'
 
 div.append(img)
@@ -83,12 +83,15 @@ function inc (){
     
     let cart = ()=>{
         let flag = true;
+        
         cartData.forEach((el) => {
-            if(el.productID == data.productID) flag = false;
+            if(el.productID == productID) flag = false;
         });
-
+        
         if(flag){
             cartData.push(data)
+            localStorage.setItem("cartdata",JSON.stringify(cartData))
+            // console.log(cartData)
             window.location.href = 'cart.html'
         }else{
             alert("ALREADY ADDED TO CART")
