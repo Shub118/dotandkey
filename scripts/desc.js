@@ -2,6 +2,7 @@ import {navbar,navbarmenu,cross} from './navbar.js'
 import footer from "./footer.js"
 document.querySelector('#navbar-bottom').innerHTML = navbar()
 document.querySelector('#navbarmenu').innerHTML = navbarmenu()
+document.getElementById('hamburger').addEventListener('click',cross);
 
 document.querySelector('#footer').innerHTML = footer()
 

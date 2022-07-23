@@ -1,0 +1,25 @@
+*{
+    text-align: center;
+    color: grey;
+}
+img{
+    
+    width: 150px;
+    height: 50px;
+}
+form{
+    width: 30%;
+    margin: auto;
+    margin-top: 3%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding: 1em;
+    border-radius: 10px;
+    text-align: left;
+}
+form>input{
+    width: 85%;
+    margin: 2% 1px 5% 1px;
+    padding: 0.5rem;
+    border: 1.5px solid rgb(177, 176, 176);
+    border-radius: 7px;
+}
