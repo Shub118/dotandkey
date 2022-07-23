@@ -1,0 +1,99 @@
+        .carousel5{
+            width:90%;
+            position:relative;
+            overflow: hidden;
+            padding:0px 10px;
+            left:5%;
+        }
+        .slider5{
+            width:90%;
+            margin:auto;
+            display:flex;
+            gap:150px;
+            transition:transition 500ms ease-in translate3d(-3336);
+            animation:example 0.5s;
+            box-sizing: border-box;
+            list-style: none;
+            background-color: white;
+        }
+        .slide5{
+            width:auto;
+            padding:0px 10px;
+        }
+        .review{
+            width:220px;
+        }
+        .button_indicator5{
+            z-index: 100;
+            position:absolute;
+            width:20px;
+            height:20px;
+            top:50%;
+            transform: translateY(-50%);
+            cursor:pointer;
+            padding:5px;
+            /* border-radius: 50px;
+            border:2px solid rgb(0,0,0,0.8); */
+            background-color: white;
+            opacity: 0.8;
+        }
+        .button-left5{
+            left:0px;
+        }
+        .button-right5{
+            right:0px;
+        }
+        .button-left5>img,
+        .button-right5>img{
+            width:15px;
+            height:15px;
+        }
+        .review_img{
+            width:130px;
+            height:130px;
+            border-radius: 10px;
+            overflow: hidden;
+            margin-left:50%;
+            transform: translateX(-50%);
+        }
+        .review_img img{
+            width:100%;
+            height:100%;
+        }
+        .review-text{
+            width:100%;
+            overflow: hidden;
+        }
+        .review-text div:first-child{
+            height:35px;
+            font-size: 15px;
+            text-align: left;
+            overflow: hidden;
+        }
+        .review-text>p{
+            height:auto;
+            text-align: left;
+            font-size: 14px;
+            color:rgb(0,0,0,0.5);
+            margin-top: 5px;
+        }
+        .reviewer{
+            margin-top: -10px;
+            font-family: 'Open Sans', sans-serif;
+            font-size: 12px;
+            text-align: right;
+            font-weight: 600;
+            color:rgb(0,0,0,0.8)
+        }
+        .review_rating{
+            font-size: 10px;
+            text-align: left;
+            margin:2px auto;
+        }
+        .check{
+            color:orange;
+        }
+        .slide5 .fa-star-half-full{
+            color:orange;
+
+        }
