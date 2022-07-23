@@ -60,7 +60,7 @@ document.getElementById('navbar-bottom').innerHTML = navbar()
 document.getElementById('navbarmenu').innerHTML=navbarmenu();
 
 
-document.getElementById('hamburger').addEventListener('click',cross)
+document.getElementById('hamburger').addEventListener('click',cross);
 let flag = true;
 function cross(){
    
@@ -69,7 +69,7 @@ function cross(){
          x = document.querySelector('#hamburger').innerText
         document.querySelector('#hamburger').innerText = document.querySelector('#navh2').innerText;
         document.querySelector('h2').innerText=x
-        document.getElementById('navbarmenu').style.display = 'flex'
+        document.getElementById('navbarmenu').style.display = 'flex';
         flag = false;
     }else{
          x = document.querySelector('#hamburger').innerText;
