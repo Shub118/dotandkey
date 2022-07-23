@@ -33,6 +33,10 @@ function display(data){
     data.forEach((el)=>{
      let image = document.createElement("img");
      image.src=el.image;
+     image.addEventListener("click",()=>{
+        localStorage.setItem("description",JSON.stringify(el))
+        window.location.href="desc.html"
+      })
      let discount = document.createElement("p")
      discount.setAttribute("class","discount")
      discount.innerText=`save ${el.discount}%`
@@ -100,14 +104,15 @@ if(sort.value==="featured"){
 }
 })
 import footer from "./footer.js"
+import {navbar,navbarmenu,cross} from "./navbar.js"
 
 document.querySelector("#bestseller-footer").innerHTML=footer();
 
-let bestdataLS =  JSON.parse(localStorage.getItem("description")) || [];
+let bestdataLS =  JSON.parse(localStorage.getItem("cartdata")) || [];
 function cart(el){
    
    bestdataLS.push(el)
   
-  localStorage.setItem("description",JSON.stringify(bestdataLS))
+  localStorage.setItem("cartdata",JSON.stringify(bestdataLS))
   window.location.href="cart.html"
 }

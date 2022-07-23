@@ -33,6 +33,11 @@ function display(data){
     data.forEach((el)=>{
      let image = document.createElement("img");
      image.src=el.image;
+     image.addEventListener("click",()=>{
+       localStorage.setItem("description",JSON.stringify(el))
+       
+       window.location.href="desc.html"
+     })
      let discount = document.createElement("p")
      discount.setAttribute("class","discount")
      discount.innerText=`save ${el.discount}%`
@@ -109,12 +114,12 @@ document.getElementById('navbar-bottom').innerHTML = navbar()
 document.getElementById('navbarmenu').innerHTML=navbarmenu();
 
 document.getElementById('hamburger').addEventListener('click',cross)
-let dataLS =  JSON.parse(localStorage.getItem("description")) || [];
+let dataLS =  JSON.parse(localStorage.getItem("cartdata")) || [];
 function cart(el){
    
    dataLS.push(el)
   
-  localStorage.setItem("description",JSON.stringify(dataLS))
+  localStorage.setItem("cartdata",JSON.stringify(dataLS))
   window.location.href="cart.html"
    
 }
