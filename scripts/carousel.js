@@ -1,5 +1,6 @@
 let carousel = (sliders, prev, next) =>{
     let slides=Array.from(sliders.children);
+    console.log(slides);
     let slideWidth=slides[0].getBoundingClientRect().width;
     
     let setSlidePosition=(slide, index) => {
@@ -16,6 +17,7 @@ let carousel = (sliders, prev, next) =>{
 
     // right button function
 next.onclick = () => {
+    console.log("hello");
         let currentslide = sliders.querySelector(".current-slide");
         let nextslide = currentslide.nextElementSibling;
         if (nextslide === slides[slides.length-2]) {
@@ -77,7 +79,15 @@ let journal=()=>{
     let next = document.querySelector(".button-right4");
     carousel(sliders,prev,next);
 }
+
+let review=()=>{
+    let sliders = document.querySelector('.slider5')
+    let prev = document.querySelector(".button-left5");
+    let next = document.querySelector(".button-right5");
+    carousel(sliders,prev,next);
+}
 ingredients();
 skincare();
 awards();
 journal();
+review();
