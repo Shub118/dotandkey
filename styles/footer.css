@@ -55,7 +55,7 @@
     font-weight: lighter;
 }
 
-input {
+#for_email {
     width: 200px;
     text-align: center;
     height: 50px;

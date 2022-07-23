@@ -1,3 +1,12 @@
+
+
+import {navbar,navbarmenu,cross} from "./navbar.js"
+
+import footer from "./footer.js"
+
+document.getElementById("footer").innerHTML = footer();
+
+
 var form = document.querySelector("form");
 
     form.addEventListener("submit", function (event) {
@@ -40,3 +49,7 @@ var form = document.querySelector("form");
 
 
     })
+    document.getElementById('navbar-bottom').innerHTML = navbar()
+document.getElementById('navbarmenu').innerHTML=navbarmenu();
+
+document.getElementById('hamburger').addEventListener('click',cross);
