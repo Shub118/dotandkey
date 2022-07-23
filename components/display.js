@@ -37,7 +37,7 @@ function display(data,container){
         prices.setAttribute("class", "price");
         let strikepric = document.createElement("span");
         strikepric.setAttribute("class", "strikeprice")
-        strikepric.innerText = `Rs.${element.strikedprice}.00`;
+        strikepric.innerText = `Rs.${element.stackedprice}.00`;
 
         let prodPric = document.createElement("p");
         prodPric.setAttribute("class", "prodPrice");

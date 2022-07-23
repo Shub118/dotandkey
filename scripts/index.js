@@ -76,7 +76,6 @@ setInterval(()=>{
   if(id>4){
     id=1;
   }
-  
   banner2.innerHTML="";
   let a=document.createElement('a');
   a.href="";
