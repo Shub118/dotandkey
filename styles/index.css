@@ -99,6 +99,9 @@ div h1{
     border-radius: 25px;
     height:100%;
 }
+#banner2 img:hover{
+    cursor: pointer;
+}
 
 
 .content{

@@ -22,6 +22,7 @@ function currentSlide(n) {
   showSlides(slideIndex = n);
 }
 
+
 function showSlides(n) {
   let i;
   let slides = document.getElementsByClassName("slides");
@@ -60,23 +61,35 @@ dots[slideInd-1].className += " active";
 
 
 //Banner 2 Code...
+let banner2=document.getElementById("banner2");
+
 let image=document.createElement('img');
 image.src=`./images/banner2/pic1.webp`
-document.getElementById("banner2").append(image);
+image.onclick=()=>{
+  window.location.href="toppicks.html";
+}
+banner2.append(image);
 
 
 let id=1;
 setInterval(()=>{
-  if(id>3){
+  if(id>4){
     id=1;
   }
-  document.getElementById("banner2").innerHTML="";
+  
+  banner2.innerHTML="";
   let a=document.createElement('a');
   a.href="";
   let image=document.createElement('img');
   image.src=`./images/banner2/pic${id}.webp`;
   a.append(image);
-  document.getElementById("banner2").append(a);
+  if(id===1||id===3){
+    a.href="toppicks.html"
+  }
+  else{
+    a.href="bestseller.html";
+  }
+  banner2.append(a);
   id++;
 },3000)
 
