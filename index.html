@@ -7,488 +7,466 @@
     <title>Document</title>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital@1&family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./styles/index.css">
-    <link rel="stylesheet" href="./styles/footer.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./styles/carousel2.css">
+    <link rel="stylesheet" href="./styles/navbar.css">
+    <link rel="stylesheet" href="./styles/footer.css">
 </head>
 <body>
-    <div id="banner">
-        <div class="slides">
-            <img src="./images/banner1.webp">
-        </div>
-        <div class="slides">
-            <img src="./images/banner2.webp">
-        </div>
-        <div class="slides">
-            <img src="./images/banner3.webp">
-        </div>
-        <div class="slides">
-            <img src="./images/banner4.webp">
-        </div>
-        <div class="slides">
-            <img src="./images/banner5.webp">
-        </div>
-    </div>
-    <a class="pre" onclick="plusSlides(-1)">&#10094;</a>
-    <a class="next" onclick="plusSlides(1)">&#10095;</a>
-    <div style="text-align:center">
-        <span class="dot" onclick="currentSlide(1)"></span>
-        <span class="dot" onclick="currentSlide(2)"></span>
-        <span class="dot" onclick="currentSlide(3)"></span>
-        <span class="dot" onclick="currentSlide(4)"></span>
-        <span class="dot" onclick="currentSlide(5)"></span>
-    </div>
+    <div id="bigContainer">
 
-    <div>
-        <p class="slogan">loved by</p>
-        <h1>10Lakh+ Customers </h1>
-    </div>
-    
-    <div id="banner2">
-        <!-- Second Banner from JS -->
-    </div>
-    
-    <div id="newArrive">
-        <p class="head1">SHOP OUR</p>
-        <h2 class="head2">NEW ARRIVALS</h2>
-        <div id="newArriveContent" class="content">
+        <div id="navbar-top">
+            <u id="navbar-promo-text">3 D&K Bestseller FREE on orders 999+</u>
         </div>
-    </div>
-    
-    <div id="bestSeller">
-        <p class="head1">OUR</p>
-        <h2 class="head2">BEST SELLERS</h2>
-        <div id="bar"><div id="skin">SKINCARE</div> | <div id="body">BODYCARE</div> | <div id="hair">HAIRCARE </div> | <div id="nutr">NUTRITION </d></div></div>
-        <div id="bestSellerContent" class="content">
+        <div id="navbar-bottom">
         </div>
-    </div>
+        <div id="navbarmenu">
+            
+            
+        </div>
 
-    <div id="spotlight">
-        <p class="head1">IN THE</p>
-        <h2 class="head2">SPOTLIGHT</h2>
-        <div id="spotContent">
-            <a href=""><img src="./images/spotlight/pic1.webp"></a>
-            <a href=""><img src="./images/spotlight/pic2.webp"></a>
-        </div>
-        <div id="spotContent2">
-            <a href=""><img src="./images/spotlight/pic3.webp"></a>
-        </div>
-    </div>
-    
-    <div id="buyIt">
-        <p class="head1">WATCH IT, LOVE IT</p>
-        <h2 class="head2">BUY IT</h2>
-        <div id="buyItContent">
-            <div class="prod">
-                <video class="video" autoplay muted loop>
-                    <source src="./images/buyit/vid1.mp4" type="video/mp4">
-                  </video>
-                <img class="logo" src="./images/buyit/logo1.webp">
-                <h3 class="title">Vitamin C Moisturizer With Kakadu Plum & Vitamin E</h3>
-                <div id="rating">
-                    <div>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star-half-full"></span>
-                    </div>
-                    <div>(245)</div>
-                </div>
-                <div class="price">
-                    <p class="strikeprice">Rs.350</p>
-                    <p class="prodPrice">Rs.315</p>
-                </div>
-            </div>
-            <div class="prod">
-                <video class="video" autoplay muted loop>
-                    <source src="./images/buyit/vid2.mp4" type="video/mp4">
-                  </video>
-                <img class="logo" src="./images/buyit/logo2.webp">
-                <h3 class="title">20% Vitamin C Serum with Blood Orange | </h3>
-                <div id="rating">
-                    <div>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star-half-full"></span>
-                    </div>
-                    <div>(245)</div>
-                </div>
-                <div class="price">
-                    <p class="strikeprice">Rs.665</p>
-                    <p class="prodPrice">Rs.499</p>
-                </div>
-            </div>
-            <div class="prod">
-                <video class="video" autoplay muted loop>
-                    <source src="./images/buyit/vid3.mp4" type="video/mp4">
-                  </video>
-                <img class="logo" src="./images/buyit/logo3.webp">
-                <h3 class="title">72 HR Hydrating Probiotic Gel Moisturizer For Face </h3>
-                <div id="rating">
-                    <div>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star-half-full"></span>
-                    </div>
-                    <div>(245)</div>
-                </div>
-                <div class="price">
-                    <p class="strikeprice">Rs.745</p>
-                    <p class="prodPrice">Rs.633</p>
-                </div>
-            </div>
-            <div class="prod">
-                <video class="video" autoplay muted loop>
-                    <source src="./images/buyit/vid4.mp4" type="video/mp4">
-                  </video>
-                <img class="logo" src="./images/buyit/logo4.webp">
-                <h3 class="title">Vitamin C Lip Mask With Vitamin E, Shea Butter</h3>
-                <div id="rating">
-                    <div>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star-half-full"></span>
-                    </div>
-                    <div>(245)</div>
-                </div>
-                <div class="price">
-                    <p class="strikeprice">Rs.445</p>
-                    <p class="prodPrice">Rs.387</p>
-                </div>
-            </div>
-            <div class="prod">
-                <video class="video" autoplay muted loop>
-                    <source src="./images/buyit/vid5.mp4" type="video/mp4">
-                  </video>
-                <img class="logo" src="./images/buyit/logo5.webp">
-                <h3 class="title">Retinol & Ceramide Age Defense Night Cream For Face</h3>
-                <div id="rating">
-                    <div>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star-half-full"></span>
-                    </div>
-                    <div>(245)</div>
-                </div>
-                <div class="price">
-                    <p class="strikeprice"></p>
-                    <p class="prodPrice" style="margin-left:-30px;">Rs.599-Rs.709</p>
-                </div>
-            </div>
-        </div>
-    </div>
-    
-    <div id="topCategory">
-        <p class="head1">SHOP OUR</p>
-        <h2 class="head2">TOP CATEGORIES</h2>
-            <div id="bar"><div id="cream">FACE CREAMS</div>
-             | <div id="serum">FACE SERUMS</div> | 
-             <div id="wash">FACE WASHES </div> | <div id="mask">FACE MASKS</d></div></div>
-            <div id="topCatContent" class="content">
-            </div>
-        </div>
-    </div>
 
-    <div id="download">
-        <a href="https://play.google.com/store/apps/details?id=com.dotandkey">
-            <img src="./images/download.webp">
-        </a>
-    </div>
 
+
+        <div id="banner">
+            <div class="slides">
+                <a href="bestseller.html"><img src="./images/banner1.webp"></a>
+            </div>
+            <div class="slides">
+                <a href="toppicks.html"><img src="./images/banner2.webp"></a>
+            </div>
+            <div class="slides">
+                <a href="bestseller.html"><img src="./images/banner3.webp"></a>
+            </div>
+            <div class="slides">
+                <a href="toppicks.html"><img src="./images/banner4.webp"></a>
+            </div>
+            <div class="slides">
+                <a href="bestseller.html"><img src="./images/banner5.webp"></a>
+            </div>
+        </div>
+        <a class="pre" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+            <span class="dot" onclick="currentSlide(5)"></span>
+        </div>
+
+        <div>
+            <p class="slogan">loved by</p>
+            <h1>10Lakh+ Customers </h1>
+        </div>
+        
+        <div id="banner2">
+            <!-- Second Banner from JS -->
+        </div>
+        
+        <div id="newArrive">
+            <p class="head1">SHOP OUR</p>
+            <h2 class="head2">NEW ARRIVALS</h2>
+            <div id="newArriveContent" class="content">
+            </div>
+        </div>
+        
+        <div id="bestSeller">
+            <p class="head1">OUR</p>
+            <h2 class="head2">BEST SELLERS</h2>
+            <div id="bar"><div id="skin">SKINCARE</div> | <div id="body">BODYCARE</div> | <div id="hair">HAIRCARE </div> | <div id="nutr">NUTRITION </d></div></div>
+            <div id="bestSellerContent" class="content">
+            </div>
+        </div>
+
+        <div id="spotlight">
+            <p class="head1">IN THE</p>
+            <h2 class="head2">SPOTLIGHT</h2>
+            <div id="spotContent">
+                <a href="bestseller.html"><img src="./images/spotlight/pic1.webp"></a>
+                <a href="bestseller.html"><img src="./images/spotlight/pic2.webp"></a>
+            </div>
+            <div id="spotContent2">
+                <a href="toppicks.html"><img src="./images/spotlight/pic3.webp"></a>
+            </div>
+        </div>
+        
+        <div id="buyIt">
+            <p class="head1">WATCH IT, LOVE IT</p>
+            <h2 class="head2">BUY IT</h2>
+            <div id="buyItContent">
+                <div class="prod">
+                    <video class="video" autoplay muted loop>
+                        <source src="./images/buyit/vid1.mp4" type="video/mp4">
+                    </video>
+                    <img class="logo" src="./images/buyit/logo1.webp">
+                    <h3 class="title">Vitamin C Moisturizer With Kakadu Plum & Vitamin E</h3>
+                    <div id="rating">
+                        <div>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star-half-full"></span>
+                        </div>
+                        <div>(245)</div>
+                    </div>
+                    <div class="price">
+                        <p class="strikeprice">Rs.350</p>
+                        <p class="prodPrice">Rs.315</p>
+                    </div>
+                </div>
+                <div class="prod">
+                    <video class="video" autoplay muted loop>
+                        <source src="./images/buyit/vid2.mp4" type="video/mp4">
+                    </video>
+                    <img class="logo" src="./images/buyit/logo2.webp">
+                    <h3 class="title">20% Vitamin C Serum with Blood Orange | </h3>
+                    <div id="rating">
+                        <div>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star-half-full"></span>
+                        </div>
+                        <div>(245)</div>
+                    </div>
+                    <div class="price">
+                        <p class="strikeprice">Rs.665</p>
+                        <p class="prodPrice">Rs.499</p>
+                    </div>
+                </div>
+                <div class="prod">
+                    <video class="video" autoplay muted loop>
+                        <source src="./images/buyit/vid3.mp4" type="video/mp4">
+                    </video>
+                    <img class="logo" src="./images/buyit/logo3.webp">
+                    <h3 class="title">72 HR Hydrating Probiotic Gel Moisturizer For Face </h3>
+                    <div id="rating">
+                        <div>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star-half-full"></span>
+                        </div>
+                        <div>(245)</div>
+                    </div>
+                    <div class="price">
+                        <p class="strikeprice">Rs.745</p>
+                        <p class="prodPrice">Rs.633</p>
+                    </div>
+                </div>
+                <div class="prod">
+                    <video class="video" autoplay muted loop>
+                        <source src="./images/buyit/vid4.mp4" type="video/mp4">
+                    </video>
+                    <img class="logo" src="./images/buyit/logo4.webp">
+                    <h3 class="title">Vitamin C Lip Mask With Vitamin E, Shea Butter</h3>
+                    <div id="rating">
+                        <div>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star-half-full"></span>
+                        </div>
+                        <div>(245)</div>
+                    </div>
+                    <div class="price">
+                        <p class="strikeprice">Rs.445</p>
+                        <p class="prodPrice">Rs.387</p>
+                    </div>
+                </div>
+                <div class="prod">
+                    <video class="video" autoplay muted loop>
+                        <source src="./images/buyit/vid5.mp4" type="video/mp4">
+                    </video>
+                    <img class="logo" src="./images/buyit/logo5.webp">
+                    <h3 class="title">Retinol & Ceramide Age Defense Night Cream For Face</h3>
+                    <div id="rating">
+                        <div>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star-half-full"></span>
+                        </div>
+                        <div>(245)</div>
+                    </div>
+                    <div class="price">
+                        <p class="strikeprice"></p>
+                        <p class="prodPrice" style="margin-left:-30px;">Rs.599-Rs.709</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div id="topCategory">
+            <p class="head1">SHOP OUR</p>
+            <h2 class="head2">TOP CATEGORIES</h2>
+                <div id="bar"><div id="cream">FACE CREAMS</div>
+                | <div id="serum">FACE SERUMS</div> | 
+                <div id="wash">FACE WASHES </div> | <div id="mask">FACE MASKS</d></div></div>
+                <div id="topCatContent" class="content">
+                </div>
+            </div>
+        
+
+        <div id="download">
+            <a href="https://play.google.com/store/apps/details?id=com.dotandkey">
+                <img src="./images/download.webp">
+            </a>
+        </div>
+
+        <div id="ingredients">
+            <p class="head1">SHOP BY</p>
+            <h2 class="head2">INGREDIENTS</h2>
+            <div class="carousel">
+                <div class="button_indicator button-left"><img src="./images/indicator/left.png"></div>
+                    <ul class="slider">
+                        <li class="slide current-slide">
+                            <a href="toppicks.html"><img src="./images/ingredient/pic1.webp"></a>
+                        </li>
+                        <li class="slide">
+                            <a href="bestseller.html"><img src="./images/ingredient/pic2.webp"></a>
+                        </li>
+                        <li class="slide">
+                            <a href="toppicks.html"><img src="./images/ingredient/pic3.webp"></a>
+                        </li>
+                        <li class="slide">
+                            <a href="bestseller.html"><img src="./images/ingredient/pic4.webp"></a>
+                        </li>
+                        <li class="slide">
+                            <a href="toppicks.html"><img src="./images/ingredient/pic5.webp"></a>
+                        </li>
+                        <li class="slide">
+                            <a href="bestseller.html"><img src="./images/ingredient/pic6.webp"></a>
+                        </li>
+                        <li class="slide">
+                            <a href="toppicks.html"><img src="./images/ingredient/pic1.webp"></a>
+                        </li>
+                        <li class="slide">
+                            <a href="bestseller.html"><img src="./images/ingredient/pic2.webp"></a>
+                        </li>
+                        <li class="slide">
+                            <a href="toppicks.html"><img src="./images/ingredient/pic3.webp"></a>
+                        </li>
+                        <li class="slide">
+                            <a href="bestseller.html"><img src="./images/ingredient/pic4.webp"></a>
+                        </li>
+                        <li class="slide">
+                            <a href="toppicks.html"><img src="./images/ingredient/pic5.webp"></a>
+                        </li>
+                        <li class="slide">
+                            <a href="bestseller.html"><img src="./images/ingredient/pic6.webp"></a>
+                        </li>
+                    </ul>
+                <div class="button_indicator button-right"><img src="./images/indicator/right.svg"></div>
+            </div>
+            <button id="shop"><a href="">SHOP NOW</a></button>
+        </div>
+
+        <div id="skincare2">
+            <p class="head1">GUIDE TO</p>
+            <h2 class="head2">SKINCARE</h2>
+            <div class="carousel2">
+                <div class="button_indicator button-left2"><img src="./images/indicator/left.png"></div>
+                    <ul class="slider2">
+                        <li class="slide2 current-slide">
+                            <a href="bestseller.html"><img src="./images/skincare2/pic1.webp"></a>
+                        </li>
+                        <li class="slide2">
+                            <a href="toppicks.html"><img src="./images/skincare2/pic2.webp"></a>
+                        </li>
+                        <li class="slide2">
+                            <a href="bestseller.html"><img src="./images/skincare2/pic3.webp"></a>
+                        </li>
+                        <li class="slide2">
+                            <a href="toppicks.html"><img src="./images/skincare2/pic4.webp"></a>
+                        </li>
+                        <li class="slide2">
+                            <a href="bestseller.html"><img src="./images/skincare2/pic1.webp"></a>
+                        </li>
+                        <li class="slide2">
+                            <a href="toppicks.html"><img src="./images/skincare2/pic2.webp"></a>
+                        </li>
+                        <li class="slide2">
+                            <a href="bestseller.html"><img src="./images/skincare2/pic3.webp"></a>
+                        </li>
+                        <li class="slide2">
+                            <a href="toppicks.html"><img src="./images/skincare2/pic4.webp"></a>
+                        </li>
+                    </ul>
+                <div class="button_indicator button-right2"><img src="./images/indicator/right.svg"></div>
+            </div>
+        </div>
+        
+        <div id="ikwi">
+            <a href=""><img src="./images/ikwi.webp"></a>
+        </div>
+
+        <div id="love">
+            <h2 class="head3">LOVE IS GREATER</h2>
+            <p class="head4">WHEN SHARED</p>
+            <img src="./images/love.webp">
+        </div>
+        
+        <div id="cleanbeauty">
+            <h2 class="head3">CLEAN BEAUTY</h2>
+            <p class="head4">WITH UNCOMPROMISED EFFICACY</p>
+            <div>
+                <p>At Dot & Key, we strive to find the missing <span class="dark">"dots"</span> 
+                    in your skincare regime and are obsessed with providing 
+                    solutions or <span class="dark">"keys"</span> to these.</p>
+                <p>Our revolutionary products are crafted with utmost care 
+                    and love for you. By blending <span class="dark">luxurious botanicals</span> with 
+                    <span class="dark">high performance actives</span>, we bring to you clean formulations
+                    that are absolutely safe, delightfully gentle and 
+                    unquestionably effective.</p>
+            </div>
+        </div>
+
+        <div id="cleanlogo">
+            <div>
+                <img src="./images/cleanlogo/pic1.webp">
+            </div>
+            <div>
+                <img src="./images/cleanlogo/pic2.webp">
+            </div>
+            <div>
+                <img src="./images/cleanlogo/pic3.webp">
+            </div>
+            <div>
+                <img src="./images/cleanlogo/pic4.webp">
+            </div>
+        </div>
+        
+
+        <div class="carousel3">
+            <div class="button_indicator button-left3"><img src="./images/indicator/left.png"></div>
+                <ul class="slider3">
+                    <li class="slide3 current-slide">
+                        <div id="award">
+                            <div id="awardcontainer">
+                            <h2 class="head3">AWARD WINNING</h2>
+                            <p class="head4">SKINCARE</p>
+                            <p id="award_desc">Dont just take our word for it. Here's what the beauty gurus have to say about our products</p>
+                            </div>
+                            <div>
+                                <img src="./images/award/pic1.gif">
+                            </div>  
+                        </div>
+                    </li>
+                    <li class="slide3">
+                        <div id="award">
+                            <div id="awardcontainer">
+                            <h2 class="head3">THE DOT & KEY</h2>
+                            <p class="head4">PROMISE</p>
+                            <p id="award_desc">WE BELIEVE IN delightfully safe, surprisingly gentle and unquestionably effective skincare products that are free from nasty chemicals</p>
+                            </div>
+                            <div>
+                                <img src="./images/award/pic2.webp">
+                            </div>  
+                        </div>
+                    </li>
+                    <li class="slide3">
+                        <div id="award">
+                            <div id="awardcontainer">
+                            <h2 class="head3">AWARD WINNING</h2>
+                            <p class="head4">SKINCARE</p>
+                            <p id="award_desc">Dont just take our word for it. Here's what the beauty gurus have to say about our products</p>
+                            </div>
+                            <div>
+                                <img src="./images/award/pic1.gif">
+                            </div>  
+                        </div>
+                    </li>
+                    <li class="slide3">
+                        <div id="award">
+                            <div id="awardcontainer">
+                            <h2 class="head3">THE DOT & KEY</h2>
+                            <p class="head4">PROMISE</p>
+                            <p id="award_desc">WE BELIEVE IN delightfully safe, surprisingly gentle and unquestionably effective skincare products that are free from nasty chemicals</p>
+                            </div>
+                            <div>
+                                <img src="./images/award/pic2.webp">
+                            </div>  
+                        </div>
+                    </li>
+                </ul>
+            <div class="button_indicator button-right3"><img src="./images/indicator/right.svg"></div>
+        </div>
+
+        <div >
+            <h2 id="seen">AS SEEN IN</h2>
+            <div id="seen_cont">
+                <div>
+                    <p>"Latest and greatest natural products for safe, non-toxic skincare."</p>
+                    <img src="./images/seen/pic1.webp">
+                </div>
+                <div>
+                    <p>"Dot & Key are hoping to spotlight all the body parts you forget to look after."</p>
+                    <img id="vogue" src="./images/seen/pic2.webp">
+                </div>
+                <div>
+                    <p>"Even a 10 step routine can have blind spots. Dot & key fills in those gaps."</p>
+                    <img src="./images/seen/pic3.webp">
+                </div>
+            </div>
+        </div>
+
+
+    <!-- carousel skincare journal -->
     <div id="ingredients">
-        <p class="head1">SHOP BY</p>
-        <h2 class="head2">INGREDIENTS</h2>
-        <div class="carousel">
-            <div class="button_indicator button-left"><img src="./images/indicator/left.png"></div>
-                <ul class="slider">
-                    <li class="slide current-slide">
-                        <img src="./images/ingredient/pic1.webp">
+        <p class="head1">OUR </p>
+        <h2 class="head2">SKIN JOURNAL</h2>
+        <div class="carousel4">
+            <div class="button_indicator4 button-left4"><img src="./images/indicator/left.png"></div>
+                <ul class="slider4">
+                    <li class="slide4 current-slide">
+                            <img src="./images/journal/pic1.webp">
+                            <h3>Sun Care 101: Here's Why SPF Is Your BFF</h3>
+                            <p>As the sun continue to turn its back on a much neede c...</p>
+                            <a href="">read more ></a>
                     </li>
-                    <li class="slide">
-                        <img src="./images/ingredient/pic2.webp">
+                    <li class="slide4 ">                    
+                            <img src="./images/journal/pic2.webp">
+                            <h3>Don't Let The Rains Ruin Your Hair Care Game!</h3>
+                            <p>Monsoons are lovely, but they also bring their shar of hai...</p>
+                            <a href="">read more ></a>                    
                     </li>
-                    <li class="slide">
-                        <img src="./images/ingredient/pic3.webp">
+                    <li class="slide4 ">
+                            <img src="./images/journal/pic3.webp">
+                            <h3>Layer Your Skincare Right, From Am to PM</h3>
+                            <p>Bought a pile of skincare products and dont't know what...</p>
+                            <a href="">read more ></a>
                     </li>
-                    <li class="slide">
-                        <img src="./images/ingredient/pic4.webp">
+                    <li class="slide4 ">
+                            <img src="./images/journal/pic4.webp">
+                            <h3>Things You Didn't Know Vitamin C Could Do</h3>
+                            <p>Everybody keeps talking about how great vitamin C is for ...</p>
+                            <a href="">read more ></a>
                     </li>
-                    <li class="slide">
-                        <img src="./images/ingredient/pic5.webp">
-                    </li>
-                    <li class="slide">
-                        <img src="./images/ingredient/pic6.webp">
-                    </li>
-                    <li class="slide">
-                        <img src="./images/ingredient/pic2.webp">
-                    </li>
-                    <li class="slide">
-                        <img src="./images/ingredient/pic3.webp">
-                    </li>
-                </ul>
-            <div class="button_indicator button-right"><img src="./images/indicator/right.svg"></div>
-        </div>
-        <button id="shop"><a href="">SHOP NOW</a></button>
-    </div>
-
-    <div id="skincare2">
-        <p class="head1">GUIDE TO</p>
-        <h2 class="head2">SKINCARE</h2>
-        <div class="carousel2">
-            <div class="button_indicator button-left2"><img src="./images/indicator/left.png"></div>
-                <ul class="slider2">
-                    <li class="slide2 current-slide">
-                        <img src="./images/skincare2/pic1.webp">
-                    </li>
-                    <li class="slide2">
-                        <img src="./images/skincare2/pic2.webp">
-                    </li>
-                    <li class="slide2">
-                        <img src="./images/skincare2/pic3.webp">
-                    </li>
-                    <li class="slide2">
-                        <img src="./images/skincare2/pic4.webp">
-                    </li>
-                    <li class="slide2">
-                        <img src="./images/skincare2/pic1.webp">
-                    </li>
-                    <li class="slide2">
-                        <img src="./images/skincare2/pic3.webp">
-                    </li>
-                    <li class="slide2">
-                        <img src="./images/skincare2/pic4.webp">
-                    </li>
-                </ul>
-            <div class="button_indicator button-right2"><img src="./images/indicator/right.svg"></div>
-        </div>
-    </div>
-    
-    <div id="ikwi">
-        <a href=""><img src="./images/ikwi.webp"></a>
-    </div>
-
-    <div id="love">
-        <h2 class="head3">LOVE IS GREATER</h2>
-        <p class="head4">WHEN SHARED</p>
-        <img src="./images/love.webp">
-    </div>
-    
-    <div id="cleanbeauty">
-        <h2 class="head3">CLEAN BEAUTY</h2>
-        <p class="head4">WITH UNCOMPROMISED EFFICACY</p>
-        <div>
-            <p>At Dot & Key, we strive to find the missing <span class="dark">"dots"</span> 
-                in your skincare regime and are obsessed with providing 
-                solutions or <span class="dark">"keys"</span> to these.</p>
-            <p>Our revolutionary products are crafted with utmost care 
-                and love for you. By blending <span class="dark">luxurious botanicals</span> with 
-                <span class="dark">high performance actives</span>, we bring to you clean formulations
-                that are absolutely safe, delightfully gentle and 
-                unquestionably effective.</p>
-        </div>
-    </div>
-
-    <div id="cleanlogo">
-        <div>
-            <img src="./images/cleanlogo/pic1.webp">
-        </div>
-        <div>
-            <img src="./images/cleanlogo/pic2.webp">
-        </div>
-        <div>
-            <img src="./images/cleanlogo/pic3.webp">
-        </div>
-        <div>
-            <img src="./images/cleanlogo/pic4.webp">
-        </div>
-    </div>
-    
-
-    <div class="carousel3">
-        <div class="button_indicator button-left3"><img src="./images/indicator/left.png"></div>
-            <ul class="slider3">
-                <li class="slide3 current-slide">
-                    <div id="award">
-                        <div id="awardcontainer">
-                        <h2 class="head3">AWARD WINNING</h2>
-                        <p class="head4">SKINCARE</p>
-                        <p id="award_desc">Dont just take our word for it. Here's what the beauty gurus have to say about our products</p>
-                        </div>
-                        <div>
-                              <img src="./images/award/pic1.gif">
-                        </div>  
-                    </div>
-                </li>
-                <li class="slide3">
-                    <div id="award">
-                        <div id="awardcontainer">
-                        <h2 class="head3">THE DOT & KEY</h2>
-                        <p class="head4">PROMISE</p>
-                        <p id="award_desc">WE BELIEVE IN delightfully safe, surprisingly gentle and unquestionably effective skincare products that are free from nasty chemicals</p>
-                        </div>
-                        <div>
-                              <img src="./images/award/pic2.webp">
-                        </div>  
-                    </div>
-                </li>
-                <li class="slide3">
-                    <div id="award">
-                        <div id="awardcontainer">
-                        <h2 class="head3">AWARD WINNING</h2>
-                        <p class="head4">SKINCARE</p>
-                        <p id="award_desc">Dont just take our word for it. Here's what the beauty gurus have to say about our products</p>
-                        </div>
-                        <div>
-                              <img src="./images/award/pic1.gif">
-                        </div>  
-                    </div>
-                </li>
-                <li class="slide3">
-                    <div id="award">
-                        <div id="awardcontainer">
-                        <h2 class="head3">THE DOT & KEY</h2>
-                        <p class="head4">PROMISE</p>
-                        <p id="award_desc">WE BELIEVE IN delightfully safe, surprisingly gentle and unquestionably effective skincare products that are free from nasty chemicals</p>
-                        </div>
-                        <div>
-                              <img src="./images/award/pic2.webp">
-                        </div>  
-                    </div>
-                </li>
-                <li class="slide3">
-                    <div id="award">
-                        <div id="awardcontainer">
-                        <h2 class="head3">AWARD WINNING</h2>
-                        <p class="head4">SKINCARE</p>
-                        <p id="award_desc">Dont just take our word for it. Here's what the beauty gurus have to say about our products</p>
-                        </div>
-                        <div>
-                              <img src="./images/award/pic1.gif">
-                        </div>  
-                    </div>
-                </li>
-                <li class="slide3">
-                    <div id="award">
-                        <div id="awardcontainer">
-                        <h2 class="head3">THE DOT & KEY</h2>
-                        <p class="head4">PROMISE</p>
-                        <p id="award_desc">WE BELIEVE IN delightfully safe, surprisingly gentle and unquestionably effective skincare products that are free from nasty chemicals</p>
-                        </div>
-                        <div>
-                              <img src="./images/award/pic2.webp">
-                        </div>  
-                    </div>
-                </li>
-            </ul>
-        <div class="button_indicator button-right3"><img src="./images/indicator/right.svg"></div>
-    </div>
-
-    <div >
-        <h2 id="seen">AS SEEN IN</h2>
-        <div id="seen_cont">
-            <div>
-                <p>"Latest and greatest natural products for safe, non-toxic skincare."</p>
-                <img src="./images/seen/pic1.webp">
-            </div>
-            <div>
-                <p>"Dot & Key are hoping to spotlight all the body parts you forget to look after."</p>
-                <img id="vogue" src="./images/seen/pic2.webp">
-            </div>
-            <div>
-                <p>"Even a 10 step routine can have blind spots. Dot & key fills in those gaps."</p>
-                <img src="./images/seen/pic3.webp">
-            </div>
-        </div>
-    </div>
-
-
-<!-- carousel skincare journal -->
-<div id="ingredients">
-    <p class="head1">OUR </p>
-    <h2 class="head2">SKIN JOURNAL</h2>
-    <div class="carousel4">
-        <div class="button_indicator4 button-left4"><img src="./images/indicator/left.png"></div>
-            <ul class="slider4">
-                <li class="slide4 current-slide">
-                        <img src="./images/journal/pic1.webp">
-                        <h3>Sun Care 101: Here's Why SPF Is Your BFF</h3>
-                        <p>As the sun continue to turn its back on a much neede c...</p>
-                        <a href="">read more ></a>
-                </li>
-                <li class="slide4 ">                    
-                        <img src="./images/journal/pic2.webp">
-                        <h3>Don't Let The Rains Ruin Your Hair Care Game!</h3>
-                        <p>Monsoons are lovely, but they also bring their shar of hai...</p>
-                        <a href="">read more ></a>                    
-                </li>
-                <li class="slide4 ">
-                        <img src="./images/journal/pic3.webp">
+                    <li class="slide4 ">
+                        <img src="./images/journal/pic5.webp">
                         <h3>Layer Your Skincare Right, From Am to PM</h3>
                         <p>Bought a pile of skincare products and dont't know what...</p>
                         <a href="">read more ></a>
-                </li>
-                <li class="slide4 ">
-                        <img src="./images/journal/pic4.webp">
-                        <h3>Things You Didn't Know Vitamin C Could Do</h3>
-                        <p>Everybody keeps talking about how great vitamin C is for ...</p>
-                        <a href="">read more ></a>
-                </li>
-                <li class="slide4 ">
-                    <img src="./images/journal/pic3.webp">
-                    <h3>Layer Your Skincare Right, From Am to PM</h3>
-                    <p>Bought a pile of skincare products and dont't know what...</p>
-                    <a href="">read more ></a>
-                </li>
-                <li class="slide4 ">
-                        <img src="./images/journal/pic4.webp">
-                        <h3>Things You Didn't Know Vitamin C Could Do For </h3>
-                        <p>Everybody keeps talking about how great vitamin C is for ...</p>
-                        <a href="">read more ></a>
-                </li>
-                <li class="slide4 ">                    
-                    <img src="./images/journal/pic2.webp">
-                    <h3>Don't Let The Rains Ruin Your Hair Care Game!</h3>
-                    <p>Monsoons are lovely, but they also bring their shar of hai...</p>
-                    <a href="">read more ></a>                    
-            </li>
-            <li class="slide4 ">
-                    <img src="./images/journal/pic3.webp">
-                    <h3>Layer Your Skincare Right, From Am to PM</h3>
-                    <p>Bought a pile of skincare products and dont't know what...</p>
-                    <a href="">read more ></a>
-            </li>
-            <li class="slide4 ">
-                    <img src="./images/journal/pic4.webp">
-                    <h3>Things You Didn't Know Vitamin C Could Do</h3>
-                    <p>Everybody keeps talking about how great vitamin C is for ...</p>
-                    <a href="">read more ></a>
-            </li>
-            <li class="slide4 ">
-                <img src="./images/journal/pic3.webp">
-                <h3>Layer Your Skincare Right, From Am to PM</h3>
-                <p>Bought a pile of skincare products and dont't know what...</p>
-                <a href="">read more ></a>
-            </li>
-            <li class="slide4 ">
-                    <img src="./images/journal/pic4.webp">
-                    <h3>Things You Didn't Know Vitamin C Could Do For </h3>
-                    <p>Everybody keeps talking about how great vitamin C is for ...</p>
-                    <a href="">read more ></a>
-            </li>                   
-            </ul>
-        <div class="button_indicator4 button-right4"><img src="./images/indicator/right.svg"></div>
+                    </li>
+                    <li class="slide4 ">
+                            <img src="./images/journal/pic6.webp">
+                            <h3>Things You Didn't Know Vitamin C Could Do For </h3>
+                            <p>Everybody keeps talking about how great vitamin C is for ...</p>
+                            <a href="">read more ></a>
+                    </li>
+                                    
+                </ul>
+            <div class="button_indicator4 button-right4"><img src="./images/indicator/right.svg"></div>
+        </div>
     </div>
 </div>
-
 
 
 
